@@ -1,0 +1,123 @@
+/* -----------------------------------------------------------------------------
+   Text
+   -------------------------------------------------------------------------- */
+
+/**
+ * Adjust the presentation and layout of textual content.
+ *
+ * Textual helpers typically address a 'Typographical Property':
+ *  `color`
+ *  `direction`
+ *  `font`
+ *  `font-family`
+ *  `font-size`
+ *  `font-style`
+ *  `font-variant`
+ *  `font-weight`
+ *  `letter-spacing`
+ *  `text-align`
+ *  `text-decoration`
+ *  `text-indent`
+ *  `text-shadow`
+ *  `text-transform`
+ *  `vertical-align`
+ *  `white-space`
+ *  `word-spacing`
+ *
+ * NOTE: There are instances when other properties, such as layout and box
+ * properties are used to achieve the desired presentation or layout.
+ *
+ * Example:
+ *  .txtEllipsis
+ *  .txtVisuallyHidden - This selector addresses no typographical properties,
+ *  but is left here since it is a common technique to visually hide text
+ *  while leaving it available for screenreaders.
+ */
+
+/**
+ * Adjust text horizontally.
+ */
+
+._txtLeft    { text-align: left; }
+._txtCenter  { text-align: center; }
+._txtRight   { text-align: right; }
+._txtJustify { text-align: justify; }
+
+/**
+ * Ajust text vertically.
+ */
+
+._txtTop      { vertical-align: top; }
+._txtMiddle   { vertical-align: middle; }
+._txtBottom   { vertical-align: bottom; }
+._txtBaseline { vertical-align: baseline; }
+
+/**
+ * Text Ellipsis
+ *
+ * Add an ellipsis '...' to text that is prevented from wrapping onto
+ * multiple lines.
+ */
+
+._txtEllipsis {
+  overflow: hidden;
+
+  max-width: 100%;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/**
+ * Word breaking
+ *
+ * Unbreakable words may be broken and wrap to next line.
+ */
+
+._txtBreak {
+  word-wrap: break-word;
+}
+
+/**
+ * Sizing treatments.
+ *
+ * Limit the amount of font-size delcarations.
+ *
+ * github.com/stubbornella/csslint/wiki/Don't-use-too-many-font-size-declarations
+ */
+
+._txtSmall  { font-size: 75%; }
+._txtMedium { font-size: 85%; }
+._txtLarge  { font-size: 150%; }
+
+/**
+ * Transform treamtemnt.
+ */
+
+._txtUpcase {
+  text-transform: uppercase;
+}
+
+/**
+ * Hide text visually but leave available for screenreaders: h5bp.com/v.
+ */
+
+._txtVisuallyHidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute !important;
+
+  border: 0;
+  height: 1px;
+  padding: 0;
+  width: 1px;
+}
+
+/**
+ * Collapse whitespace and suppress line breaks.
+ */
+
+._txtNoWrap {
+  white-space: nowrap;
+}

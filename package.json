@@ -1,0 +1,23 @@
+{
+  "name": "UnderscoreCSS",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CSS helper library.",
+  "keywords": [
+    "css",
+    "helpers",
+    "utilities",
+    "html",
+    "browser"
+  ],
+  "author": "Christopher DeFelice",
+  "license": "MIT",
+  "devDependencies": {
+    "csslint": "~0.10.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "load-grunt-tasks": "~0.1.2",
+    "time-grunt": "~0.2.10"
+  }
+}

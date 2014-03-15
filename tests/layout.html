@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Underscore CSS - sizing</title>
+    <link rel="stylesheet" href="../underscore.min.css">
+    <style>
+      ._container {
+        margin: 0 auto;
+        width: 960px;
+      }
+
+      .test-box,
+      .test-boxAlt {
+        margin-bottom: 10px;
+
+        background-color: #eee;
+
+        color: #333;
+        text-align: center;
+      }
+
+      .test-boxAlt {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="_container">
+      <h1>Underscore CSS - Layout</h1>
+      <p>Adjust the layout of an element.</p>
+
+      <h2>Center</h2>
+      <p>Center a box.</p>
+      <div class="test-box">
+        <div class="_size1of2 _centerBox test-boxAlt">
+          I am a centered box that is 50% as wide as it's parent.
+        </div>
+      </div>
+
+      <h2>Clearfix</h2>
+      <div class="_cf">
+        <div class="_pull _size1of2 test-box">_pull _size1of2</div>
+        <div class="_pull _size1of2 test-boxAlt">_pull _size1of2</div>
+      </div>
+
+      <h2>Display</h2>
+      <div class="_inline test-box">I am inline.</div>
+      <div class="_inlineBlock test-box">I am inline-block.</div>
+      <span class="_block test-box">I am a span with a display block.</span>
+
+      <h3>Table layout using a <code>div</code></h3>
+      <div class="_table _sizeFull">
+        <div class="_tableCell test-box">I am a table-cell.</div>
+        <div class="_tableCell test-boxAlt">I am a table-cell.</div>
+        <div class="_tableCell test-box">I am a table-cell.</div>
+        <div class="_tableCell test-boxAlt">I am a table-cell.</div>
+      </div>
+
+      <h2>Floats</h2>
+      <div class="_cf">
+        <div class="_pull _size1of2 test-box">I am pulled</div>
+      </div>
+
+      <div class="_cf">
+        <div class="_push _size1of2 test-boxAlt">I am pushed</div>
+      </div>
+
+      <h2>Overflow - hidden</h2>
+      <p>Example of clipping content on a <code>div</code> with <code>floated</code> children.</p>
+      <div class="_clipContent">
+        <div class="_pull _size1of2 test-box">I am floated left</div>
+        <div class="_pull _size1of2 test-boxAlt">I am floated left</div>
+      </div>
+
+    </div>
+  </body>
+</html>

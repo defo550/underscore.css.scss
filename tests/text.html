@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Underscore CSS - sizing</title>
+    <link rel="stylesheet" href="../underscore.min.css">
+    <style>
+      ._container {
+        margin: 0 auto;
+        width: 960px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        border: 1px solid #000;
+        height: 40px;
+      }
+
+      .test-box,
+      .test-boxAlt {
+        margin-bottom: 10px;
+
+        background-color: #eee;
+
+        color: #333;
+      }
+
+      .test-boxAlt {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="_container">
+      <h1>Underscore CSS - Text</h1>
+      <p>Adjust the presentation and layout of textual content.</p>
+
+      <h2>Text Alignment</h2>
+      <table class="_mbl">
+        <tr>
+          <td class="_txtLeft">Text align <strong>left</strong>.</td>
+          <td class="_txtCenter">Text align <strong>center</strong>.</td>
+          <td class="_txtRight">Text align <strong>right</strong>.</td>
+        </tr>
+        <tr>
+          <td class="_txtTop">Vertical align <strong>top</strong>.</td>
+          <td class="_txtMiddle">Vertical align <strong>middle</strong>.</td>
+          <td class="_txtBottom">Vertical align <strong>bottom</strong>.</td>
+        </tr>
+      </table>
+
+      <div class="_size1of2 _txtJustify test-box">
+        Text <strong>justify</strong>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, magnam eveniet error iure rerum minima unde inventore a quam pariatur quaerat vero veniam officia autem numquam facere consectetur necessitatibus. Alias!
+      </div>
+
+      <h2>Text Ellipsis</h2>
+      <div class="_size1of8">
+        <p class="_txtEllipsis">Areallylongnamewithellipsis</p>
+      </div>
+
+      <h2>Word Breaking</h2>
+      <div class="_size1of8">
+        <p class="_txtBreak">Unbreakablewordsmaybebrokenandwraptonextline.</p>
+      </div>
+
+      <h2>Text Sizing</h2>
+      <p class="_txtSmall">Text small</p>
+      <p class="_txtMedium">Text medium</p>
+      <p class="-txtlarge">Text large</p>
+
+      <h2>Visually Hidden</h2>
+      <p class="_txtVisuallyHidden">This text is visually hidden but available for screenreaders.</p>
+
+      <h2>Text nowrap</h2>
+      <div class="_size1of8 _pvl test-box">
+        <p class="_txtNoWrap">This text does not wrap to next line.</p>
+      </div>
+    </div>
+  </body>
+</html>
