@@ -11,7 +11,14 @@
     "browser"
   ],
   "author": "Christopher DeFelice",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defo550/underscoreCSS"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/defo550/underscoreCSS/blob/master/LICENSE.md"
+  },
   "devDependencies": {
     "csslint": "~0.10.0",
     "grunt": "~0.4.2",
