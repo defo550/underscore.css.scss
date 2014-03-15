@@ -23,7 +23,7 @@ shell, navigate to the root of your project directory and type `grunt build` or
 ### Installing Grunt
 
 Grunt and the assoicated plugins are installed through [npm](https://www.npmjs.org/)
-and and [node.js](http://nodejs.org/) package manager.
+and [node.js](http://nodejs.org/) package manager.
 
 1. Install Node v0.10.0 or greater.
 2. From a command shell:

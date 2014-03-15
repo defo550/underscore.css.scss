@@ -5,7 +5,7 @@
 /**
  * Adjust the layout of an element.
  *
- * Layout helpers typically focus on these propeties:
+ * Layout helpers typically focus on these properties:
  *  `bottom`
  *  `clear`
  *  `clip`
@@ -81,7 +81,7 @@
 /**
  * Overflow: clip content
  *
- * Render a new bock formatting context.  Will prevent wrapping under
+ * Render a new block formatting context.  Will prevent wrapping under
  * floated nodes.  Can contain floats and prevent overlapping of succeeding
  * nodes that are floated.
  */
