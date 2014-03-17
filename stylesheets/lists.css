@@ -10,8 +10,8 @@
  * Strip all styles from a list element.
  */
 
-._listNaked,
-._listInline {
+._listInline,
+._listNoStyle {
   padding: 0;
 
   list-style: none;
