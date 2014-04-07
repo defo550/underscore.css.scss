@@ -92,6 +92,8 @@
 
 ._inlineBlock {
   display: inline-block;
+
+  max-width: 100%;
 }
 
 ._block {
