@@ -1,93 +1,35 @@
-/* -----------------------------------------------------------------------------
-   Layout
-   -------------------------------------------------------------------------- */
-
-/**
- * Adjust the layout of an element.
- *
- * Layout helpers typically focus on these properties:
- *  `bottom`
- *  `clear`
- *  `clip`
- *  `display`
- *  `float`
- *  `left`
- *  `overflow`
- *  `position`
- *  `right`
- *  `top`
- *  `visibility`
- *  `z-index`
- */
-
-/**
- * Center
- *
- * Center a box relative to its containg box.
- */
-
 ._centerBox {
   display: block;
   float: none !important;
-
   margin-left: auto;
-  margin-right: auto;
-}
-
-/**
- * Clearfix: contain floats
- */
+  margin-right: auto; }
 
 ._cf:after {
   clear: both;
   display: table;
-
-  content: "";
-}
-
-/**
- * Display
- */
+  content: ""; }
 
 ._inline {
-  display: inline;
-}
+  display: inline; }
 
 ._inlineBlock {
   display: inline-block;
-
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 ._block {
-  display: block;
-}
+  display: block; }
 
 ._table {
-  display: table;
-}
+  display: table; }
 
 ._tableCell {
-  display: table-cell;
-}
+  display: table-cell; }
 
-/**
- * Positioning Scheme: Floats
- *
- * Position a box at the beginning or end of the current line.
- */
+._pull {
+  float: left; }
 
-._pull { float: left; }
-._push { float: right; }
-
-/**
- * Overflow: clip content
- *
- * Render a new block formatting context.  Will prevent wrapping under
- * floated nodes.  Can contain floats and prevent overlapping of succeeding
- * nodes that are floated.
- */
+._push {
+  float: right; }
 
 ._clipContent {
-  overflow: hidden;
-}
+  overflow: hidden; }

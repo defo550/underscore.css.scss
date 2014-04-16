@@ -1,0 +1,121 @@
+// -----------------------------------------------------------------------------
+// Sizing
+// -----------------------------------------------------------------------------
+
+// Adjust the width of the content area of an element.
+// Percentage based values sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+
+._size1of12 {
+  width: 8.333333333333332%;
+}
+
+._size1of10 {
+  width: 10%;
+}
+
+._size1of8 {
+  width: 12.5%;
+}
+
+._size1of6,
+._size2of12 {
+  width: 16.666666666666664%;
+}
+
+._size1of5,
+._size2of10 {
+  width: 20%;
+}
+
+._size1of4,
+._size2of8,
+._size3of12 {
+  width: 25%;
+}
+
+._size3of10 {
+  width: 30%;
+}
+
+._size1of3,
+._size2of6,
+._size4of12 {
+  width: 33.33333333333333%;
+}
+
+._size3of8 {
+  width: 37.5%;
+}
+
+._size2of5,
+._size4of10 {
+  width: 40%;
+}
+
+._size5of12 {
+  width: 41.66666666666667%;
+}
+
+._size1of2,
+._size2of4,
+._size3of6,
+._size4of8,
+._size5of10,
+._size6of12 {
+  width: 50%;
+}
+
+._size7of12 {
+  width: 58.333333333333336%;
+}
+
+._size3of5,
+._size6of10 {
+  width: 60%;
+}
+
+._size5of8 {
+  width: 62.5%;
+}
+
+._size2of3,
+._size4of6,
+._size8of12 {
+  width: 66.66666666666666%;
+}
+
+._size7of10 {
+  width: 70%;
+}
+
+._size3of4,
+._size6of8,
+._size9of12 {
+  width: 75%;
+}
+
+._size4of5,
+._size8of10 {
+  width: 80%;
+}
+
+._size5of6,
+._size10of12 {
+  width: 83.33333333333334%;
+}
+
+._size7of8 {
+  width: 87.5%;
+}
+
+._size9of10 {
+  width: 90%;
+}
+
+._size11of12 {
+  width: 91.66666666666666%;
+}
+
+._sizeFull {
+  width: 100%;
+}

@@ -1,142 +1,87 @@
-/* -----------------------------------------------------------------------------
-   Text
-   -------------------------------------------------------------------------- */
+._txtLeft {
+  text-align: left; }
 
-/**
- * Adjust the presentation and layout of textual content.
- *
- * Textual helpers typically address a 'Typographical Property':
- *  `color`
- *  `direction`
- *  `font`
- *  `font-family`
- *  `font-size`
- *  `font-style`
- *  `font-variant`
- *  `font-weight`
- *  `letter-spacing`
- *  `text-align`
- *  `text-decoration`
- *  `text-indent`
- *  `text-shadow`
- *  `text-transform`
- *  `vertical-align`
- *  `white-space`
- *  `word-spacing`
- *
- * NOTE: There are instances when other properties, such as layout and box
- * properties are used to achieve the desired presentation or layout.
- *
- * Example:
- *  .txtEllipsis
- *  .txtVisuallyHidden - This selector addresses no typographical properties,
- *  but is left here since it is a common technique to visually hide text
- *  while leaving it available for screenreaders.
- */
+._txtCenter {
+  text-align: center; }
 
-/**
- * Adjust text horizontally.
- */
+._txtRight {
+  text-align: right; }
 
-._txtLeft    { text-align: left; }
-._txtCenter  { text-align: center; }
-._txtRight   { text-align: right; }
-._txtJustify { text-align: justify; }
+._txtJustify {
+  text-align: justify; }
 
-/**
- * Ajust text vertically.
- */
+._txtTop {
+  vertical-align: top; }
 
-._txtTop      { vertical-align: top; }
-._txtMiddle   { vertical-align: middle; }
-._txtBottom   { vertical-align: bottom; }
-._txtBaseline { vertical-align: baseline; }
+._txtMiddle {
+  vertical-align: middle; }
 
-/**
- * Text Ellipsis
- *
- * Add an ellipsis '...' to text that is prevented from wrapping onto
- * multiple lines.
- */
+._txtBottom {
+  vertical-align: bottom; }
+
+._txtBaseline {
+  vertical-align: baseline; }
 
 ._txtEllipsis {
   overflow: hidden;
-
   max-width: 100%;
-
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-wrap: normal;
-}
+  word-wrap: normal; }
 
-/**
- * Text importance.
- */
+._txtGuide {
+  color: #1ba1e2; }
 
-._txtGuide          { color: #1ba1e2; }
-a._txtGuide:hover   { color: #11597a; }
+a._txtGuide:hover {
+  color: #11597a; }
 
-._txtNeutral        { color: #999; }
-a._txtNeutral:hover { color: #555; }
+._txtNeutral {
+  color: #999; }
 
-._txtDanger         { color: #e51400; }
-a._txtDanger:hover  { color: #720a01; }
+a._txtNeutral:hover {
+  color: #555; }
 
-._txtSuccess        { color: #60a917; }
-a._txtSuccess:hover { color: #37600e; }
+._txtDanger {
+  color: #e51400; }
 
-._txtWarning        { color: #fa6800; }
-a._txtWarning:hover { color: #a54403; }
+a._txtDanger:hover {
+  color: #720a01; }
 
-/**
- * Word breaking
- *
- * Unbreakable words may be broken and wrap to next line.
- */
+._txtSuccess {
+  color: #60a917; }
+
+a._txtSuccess:hover {
+  color: #37600e; }
+
+._txtWarning {
+  color: #fa6800; }
+
+a._txtWarning:hover {
+  color: #a54403; }
 
 ._txtBreak {
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
-/**
- * Sizing treatments.
- *
- * Limit the amount of font-size delcarations.
- *
- * github.com/stubbornella/csslint/wiki/Don't-use-too-many-font-size-declarations
- */
+._txtSmall {
+  font-size: 75%; }
 
-._txtSmall  { font-size: 75%; }
-._txtMedium { font-size: 85%; }
-._txtLarge  { font-size: 150%; }
+._txtMedium {
+  font-size: 85%; }
 
-/**
- * Transform treamtemnt.
- */
+._txtLarge {
+  font-size: 150%; }
 
 ._txtUpcase {
-  text-transform: uppercase;
-}
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- */
+  text-transform: uppercase; }
 
 ._txtVisuallyHidden {
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   position: absolute !important;
-
   border: 0;
   height: 1px;
   padding: 0;
-  width: 1px;
-}
-
-/**
- * Collapse whitespace and suppress line breaks.
- */
+  width: 1px; }
 
 ._txtNoWrap {
-  white-space: nowrap;
-}
+  white-space: nowrap; }

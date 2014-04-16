@@ -1,30 +1,6 @@
-/* -----------------------------------------------------------------------------
-   Images
-   -------------------------------------------------------------------------- */
-
-/**
- * Adjust layout of an image element.
- */
-
-/**
- * Fluid image.
- *
- * Prevent image from overflowing from its containing box.
- * 1. Let height adjust to width and prevent stretching.
- * 2. Set maximum width relative to its containing box.
- */
-
 ._imgFluid {
-  height: auto; /* 1 */
-  max-width: 100%; /* 2 */
-}
-
-/**
- * Circular image.
- *
- * Will render the image as a circle.
- */
+  height: auto;
+  max-width: 100%; }
 
 ._imgCircle {
-  border-radius: 50%;
-}
+  border-radius: 50%; }

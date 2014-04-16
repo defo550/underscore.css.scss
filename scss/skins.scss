@@ -1,0 +1,25 @@
+/* -----------------------------------------------------------------------------
+   Skins
+   -------------------------------------------------------------------------- */
+
+/**
+ * Skinnable helpers for adjusting HTML elements visually.
+ */
+
+
+/**
+ * Background Emphasis.
+ */
+
+._bgGuide          { background-color: #d2ebf7; }
+a._bgGuide:hover   { background-color: #a2d8f2; }
+
+._bgDanger         { background-color: #edd5d5; }
+a._bgDanger:hover  { background-color: #eaadad; }
+
+._bgSuccess        { background-color: #dfedda; }
+a._bgSuccess:hover { background-color: #c9eabe; }
+
+._bgWarning        { background-color: #f9e0cf; }
+a._bgWarning:hover { background-color: #fcd6bd; }
+

@@ -1,43 +1,13 @@
-/* -----------------------------------------------------------------------------
-   Lists
-   -------------------------------------------------------------------------- */
-
-/**
- * Adjust the presentation and layout of list elements (i.e. `ul`, `ol`, `li`).
- */
-
-/**
- * Strip all styles from a list element.
- */
-
-._listInline,
-._listNoStyle {
+._listInline, ._listNoStyle {
   padding: 0;
-
-  list-style: none;
-}
-
-/**
- * Inline list.
- *
- * Ajust `li` of a list element to align horizontally.
- *
- * 1. Remove whitespace b/w `inline-block` elements.
- * 2. Align `li` horizontally to sibling `li`.
- * 3. Reset `font-size` relative to body.
- */
+  list-style: none; }
 
 ._listInline {
   margin: 0;
-
-  font-size: 0; /* 1 */
-}
+  font-size: 0; }
 
 ._listInline > li {
-  display: inline-block; /* 2 */
-
+  display: inline-block;
   padding-left: 0.3125em;
   padding-right: 0.3125em;
-
-  font-size: 1rem; /* 3 */
-}
+  font-size: 1rem; }

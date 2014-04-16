@@ -1,0 +1,170 @@
+// -----------------------------------------------------------------------------
+// Spacing
+// -----------------------------------------------------------------------------
+
+// Adjust the whitespace and padding around an element.
+
+// Legend:
+// _<type><direction><size>
+
+// Type:
+// m = margin
+// p = padding
+
+// Direction:
+// a = all
+// b = bottom
+// h = horizontal
+// l = left
+// r = right
+// t = top
+// v = vertical
+
+// Size:
+// l = large
+// m = medium
+// n = none
+// s = small
+
+// Idea was originally adopted here: https://github.com/stubbornella/oocss
+
+// Padding helpers
+
+._ptn,
+._pvn,
+._pan { padding-top: 0 !important; }
+
+._pts,
+._pvs,
+._pas { padding-top: 0.3125em !important; }
+
+._ptm,
+._pvm,
+._pam { padding-top: 0.625em !important; }
+
+._ptl,
+._pvl,
+._pal { padding-top: 1.25em !important; }
+
+._prn,
+._phn,
+._pan { padding-right: 0 !important; }
+
+._prs,
+._phs,
+._pas { padding-right: 0.3125em !important; }
+
+._prm,
+._phm,
+._pam { padding-right: 0.625em !important; }
+
+._prl,
+._phl,
+._pal { padding-right: 1.25em !important; }
+
+._pbn,
+._pvn,
+._pan { padding-bottom: 0 !important; }
+
+._pbs,
+._pvs,
+._pas { padding-bottom: 0.3125em !important; }
+
+._pbm,
+._pvm,
+._pam { padding-bottom: 0.625em !important; }
+
+._pbl,
+._pvl,
+._pal { padding-bottom: 1.25em !important; }
+
+._pln,
+._phn,
+._pan { padding-left: 0 !important; }
+
+._pls,
+._phs,
+._pas { padding-left: 0.3125em !important; }
+
+._plm,
+._phm,
+._pam { padding-left: 0.625em !important; }
+
+._pll,
+._phl,
+._pal { padding-left: 1.25em !important; }
+
+// Margin helpers
+
+._mtn,
+._mvn,
+._man,
+._mrn,
+._mhn,
+._man { margin-top: 0 !important; }
+
+._mts,
+._mvs,
+._mas { margin-top: 0.375em !important; }
+
+._mtm,
+._mvm,
+._mam { margin-top: 0.75em !important; }
+
+._mtl,
+._mvl,
+._mal { margin-top: 1.5em !important; }
+
+._mrn,
+._mhn,
+._man { margin-right: 0 !important; }
+
+._mrs,
+._mhs,
+._mas { margin-right: 0.375em !important; }
+
+._mrm,
+._mhm,
+._mam { margin-right: 0.75em !important; }
+
+._mrl,
+._mhl,
+._mal { margin-right: 1.5em !important; }
+
+._mbn,
+._mvn,
+._man { margin-bottom: 0 !important; }
+
+._mbs,
+._mvs,
+._mas { margin-bottom: 0.375em !important; }
+
+._mbm,
+._mvm,
+._mam { margin-bottom: 0.75em !important; }
+
+._mbl,
+._mvl,
+._mal { margin-bottom: 1.5em !important; }
+
+._mln,
+._mhn,
+._man { margin-left: 0 !important; }
+
+._mls,
+._mhs,
+._mas { margin-left: 0.375em !important; }
+
+._mlm,
+._mhm,
+._mam { margin-left: 0.75em !important; }
+
+._mll,
+._mhl,
+._mal { margin-left: 1.5em !important; }
+
+._mra,
+._mha { margin-right: auto !important; }
+
+._mla,
+._mha { margin-left: auto !important; }
