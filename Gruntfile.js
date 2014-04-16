@@ -12,7 +12,8 @@ module.exports = function( grunt ) {
 
     config: {
       cssDir: 'css',
-      scssDir: 'scss'
+      scssDir: 'scss',
+      convertDir: 'scss/convert-to-css'
     },
 
     // Imports the JSON metadata stored in package.json.
@@ -37,14 +38,14 @@ module.exports = function( grunt ) {
     sass: {
       dev: {
         files: {
-          '<%= config.cssDir %>/images.css' : '<%= config.scssDir %>/images.scss',
-          '<%= config.cssDir %>/layout.css' : '<%= config.scssDir %>/layout.scss',
-          '<%= config.cssDir %>/lists.css' : '<%= config.scssDir %>/lists.scss',
-          '<%= config.cssDir %>/offsets.css' : '<%= config.scssDir %>/offsets.scss',
-          '<%= config.cssDir %>/sizing.css' : '<%= config.scssDir %>/sizing.scss',
-          '<%= config.cssDir %>/skins.css' : '<%= config.scssDir %>/skins.scss',
-          '<%= config.cssDir %>/spacing.css' : '<%= config.scssDir %>/spacing.scss',
-          '<%= config.cssDir %>/text.css' : '<%= config.scssDir %>/text.scss'
+          '<%= config.cssDir %>/images.css' : '<%= config.convertDir %>/images.scss',
+          '<%= config.cssDir %>/layout.css' : '<%= config.convertDir %>/layout.scss',
+          '<%= config.cssDir %>/lists.css' : '<%= config.convertDir %>/lists.scss',
+          '<%= config.cssDir %>/offsets.css' : '<%= config.convertDir %>/offsets.scss',
+          '<%= config.cssDir %>/sizing.css' : '<%= config.convertDir %>/sizing.scss',
+          '<%= config.cssDir %>/skins.css' : '<%= config.convertDir %>/skins.scss',
+          '<%= config.cssDir %>/spacing.css' : '<%= config.convertDir %>/spacing.scss',
+          '<%= config.cssDir %>/text.css' : '<%= config.convertDir %>/text.scss'
         }
       }
     },
