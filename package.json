@@ -25,6 +25,8 @@
     "grunt-contrib-cssmin": "~0.6.0",
     "grunt-contrib-concat": "~0.3.0",
     "load-grunt-tasks": "~0.1.2",
-    "time-grunt": "~0.2.10"
+    "time-grunt": "~0.2.10",
+    "grunt-sass": "^0.12.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }
