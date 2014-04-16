@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// Setttings
+// -----------------------------------------------------------------------------
+
+// Colors
+// -----------------------------------------------------------------------------
+
+// Grays
+$_gray-darker:           #222 !default;
+$_gray-dark:             #333 !default;
+$_gray:                  #555 !default;
+$_gray-light:            #999 !default;
+$_gray-lighter:          #eee !default;
+
+// Theme colors
+$_theme-danger:          #e75d66 !default;
+$_theme-guide:           #3bbce0 !default;
+$_theme-primary:         #00c5ad !default;
+$_theme-success:         #99ca6a !default;
+$_theme-warning:         #ecbb4f !default;
+
+// Typography
+// -----------------------------------------------------------------------------
+
+$_type-font-family: "Helvetica Neue", Helvetica, sans-serif !default;
+$_type-font-size:   16px !default;
+$_type-line-height: 1.5em !default;
+
+// Scaffolding
+// -----------------------------------------------------------------------------
+
+$_base-spacing: $_type-line-height !default;
+$_base-padding: $_type-line-height / 2 !default;
+
+
