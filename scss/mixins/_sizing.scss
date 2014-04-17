@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// Mixin: Sizing
+// -----------------------------------------------------------------------------
+
+@import '../functions/gcd';
+
+// Percentage based mixin.
+
+// To use: pass a space separated list of numbers and an optional string to
+// to create a suffix.
+
+// Example:
+// @include size( '_size', 2 4, --desktop );
+//
+// Takes 4 arguments:
+//  1. $prefix: create selector name
+//  2. Space separated list of numbers for size dimensions.
+//  3. Property to add dimension to.  Defaults to width.
+//  4. Optional suffix: create modifiers, etc.
+
+@mixin size( $prefix, $size-units, $property: width, $suffix: '' ) {
+
+  @each $var in  $size-units {
+
+    @for $i from 1 through $var - 1 {
+
+      // Get greatest common denominator.
+      $gcd: gcd( $i, $var );
+      $x: $i / $gcd;
+
+      // Create our selector with a % width.
+      .#{$prefix}#{$i}of#{$var}#{$suffix} {
+        @if $x < $i {
+          @extend .#{$prefix}#{$x}of#{$var / $gcd}#{$suffix}
+        }
+        @else {
+         #{$property}: percentage( $i / $var );
+        }
+      }
+    }
+  }
+
+}
