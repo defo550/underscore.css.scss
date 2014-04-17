@@ -37,6 +37,10 @@ module.exports = function( grunt ) {
 
     sass: {
       dev: {
+        options: {
+          style: 'expanded'
+        },
+
         files: {
           '<%= config.cssDir %>/images.css' : '<%= config.convertDir %>/images.scss',
           '<%= config.cssDir %>/layout.css' : '<%= config.convertDir %>/layout.scss',
