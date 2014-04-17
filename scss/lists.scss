@@ -6,9 +6,11 @@
 
 // Strip all styles from a list element.
 
+// 1. Reset browser defaults.
+
 ._listInline,
 ._listNoStyle {
-  padding: 0;
+  padding: 0; // 1
 
   list-style: none;
 }
@@ -16,21 +18,28 @@
 // Inline list.
 // Ajust `li` of a list element to align horizontally.
 
-// 1. Remove whitespace b/w `inline-block` elements.
-// 2. Align `li` horizontally to sibling `li`.
-// 3. Reset `font-size` relative to body.
+// 1. Reset browser defaults.
+// 2. Remove whitespace b/w `inline-block` elements.
+// 3. Align `li` horizontally to sibling `li`.
+// 4. Address FF issue with child images with a declaration of `max-width: 100%;`
+// 5. Pixel fallback for IE 8 to reset font-size.
+// 6. Reset `font-size` relative to body.
+// 7. Provide consitent vertical alignment for `li` elements.
 
 ._listInline {
-  margin: 0;
+  margin: 0; // 1
 
-  font-size: 0; // 1
+  font-size: 0; // 2
 }
 
 ._listInline > li {
-  display: inline-block; // 2
+  display: inline-block; // 3
 
-  padding-left: 0.3125em;
-  padding-right: 0.3125em;
+  max-width: 100%; // 4
+  padding-left: $_base-padding / 2;
+  padding-right: $_base-padding / 2;
 
-  font-size: 1rem; // 3
+  font-size: 16px; // 5
+  font-size: 1rem; // 6
+  vertical-align: top; // 7
 }
