@@ -1,71 +1,119 @@
-._size1of12 {
-  width: 8.33333%; }
-
-._size1of10 {
-  width: 10%; }
-
-._size1of8 {
-  width: 12.5%; }
-
-._size1of6, ._size2of12 {
-  width: 16.66667%; }
-
-._size1of5, ._size2of10 {
-  width: 20%; }
-
-._size1of4, ._size2of8, ._size3of12 {
-  width: 25%; }
-
-._size3of10 {
-  width: 30%; }
-
-._size1of3, ._size2of6, ._size4of12 {
-  width: 33.33333%; }
-
-._size3of8 {
-  width: 37.5%; }
-
-._size2of5, ._size4of10 {
-  width: 40%; }
-
-._size5of12 {
-  width: 41.66667%; }
+/* -----------------------------------------------------------------------------
+   Sizing: compiled from scss/sizing.scss
+   -------------------------------------------------------------------------- */
 
 ._size1of2, ._size2of4, ._size3of6, ._size4of8, ._size5of10, ._size6of12 {
-  width: 50%; }
+  width: 50%;
+}
 
-._size7of12 {
-  width: 58.33333%; }
-
-._size3of5, ._size6of10 {
-  width: 60%; }
-
-._size5of8 {
-  width: 62.5%; }
+._size1of3, ._size2of6, ._size4of12 {
+  width: 33.33333%;
+}
 
 ._size2of3, ._size4of6, ._size8of12 {
-  width: 66.66667%; }
+  width: 66.66667%;
+}
 
-._size7of10 {
-  width: 70%; }
+._size1of4, ._size2of8, ._size3of12 {
+  width: 25%;
+}
 
 ._size3of4, ._size6of8, ._size9of12 {
-  width: 75%; }
+  width: 75%;
+}
+
+._size1of5, ._size2of10 {
+  width: 20%;
+}
+
+._size2of5, ._size4of10 {
+  width: 40%;
+}
+
+._size3of5, ._size6of10 {
+  width: 60%;
+}
 
 ._size4of5, ._size8of10 {
-  width: 80%; }
+  width: 80%;
+}
+
+._size1of6, ._size2of12 {
+  width: 16.66667%;
+}
 
 ._size5of6, ._size10of12 {
-  width: 83.33333%; }
+  width: 83.33333%;
+}
+
+._size1of7 {
+  width: 14.28571%;
+}
+
+._size2of7 {
+  width: 28.57143%;
+}
+
+._size3of7 {
+  width: 42.85714%;
+}
+
+._size4of7 {
+  width: 57.14286%;
+}
+
+._size5of7 {
+  width: 71.42857%;
+}
+
+._size6of7 {
+  width: 85.71429%;
+}
+
+._size1of8 {
+  width: 12.5%;
+}
+
+._size3of8 {
+  width: 37.5%;
+}
+
+._size5of8 {
+  width: 62.5%;
+}
 
 ._size7of8 {
-  width: 87.5%; }
+  width: 87.5%;
+}
+
+._size1of10 {
+  width: 10%;
+}
+
+._size3of10 {
+  width: 30%;
+}
+
+._size7of10 {
+  width: 70%;
+}
 
 ._size9of10 {
-  width: 90%; }
+  width: 90%;
+}
+
+._size1of12 {
+  width: 8.33333%;
+}
+
+._size5of12 {
+  width: 41.66667%;
+}
+
+._size7of12 {
+  width: 58.33333%;
+}
 
 ._size11of12 {
-  width: 91.66667%; }
-
-._sizeFull {
-  width: 100%; }
+  width: 91.66667%;
+}
