@@ -9,11 +9,17 @@
 // @param {boolean} $anchor=true - Create a<key>:hover selector.
 
 @mixin _color-variant( $list, $prop: color, $anchor: true ) {
+
   @each $selector, $value in $list {
-    .#{$selector}        { #{unquote($prop)}: $value; }
+
+    .#{$selector} {
+      #{unquote($prop)}: $value;
+    }
 
     @if $anchor {
       a.#{$selector}:hover { #{unquote($prop)}: darken($value, 10%); }
     }
+
   }
+
 }
