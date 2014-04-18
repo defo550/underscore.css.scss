@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Mixin: Color variant
+// -----------------------------------------------------------------------------
+
+// Add a key/value list to generate color emphasis styles.
+//
+// @param {()} $list - key/value pair list.
+// @param {string} $prop=color - CSS property to add value to.
+// @param {boolean} $anchor=true - Create a<key>:hover selector.
+
+@mixin _color-variant( $list, $prop: color, $anchor: true ) {
+  @each $selector, $value in $list {
+    .#{$selector}        { #{unquote($prop)}: $value; }
+
+    @if $anchor {
+      a.#{$selector}:hover { #{unquote($prop)}: darken($value, 10%); }
+    }
+  }
+}
