@@ -25,6 +25,7 @@
 // m = medium
 // n = none
 // s = small
+// a = auto
 
 // Idea was originally adopted here: https://github.com/stubbornella/oocss
 
@@ -36,15 +37,15 @@
 
 ._pts,
 ._pvs,
-._pas { padding-top: 0.3125em !important; }
+._pas { padding-top: ($_base-padding / 4) !important; }
 
 ._ptm,
 ._pvm,
-._pam { padding-top: 0.625em !important; }
+._pam { padding-top: $_base-padding !important; }
 
 ._ptl,
 ._pvl,
-._pal { padding-top: 1.25em !important; }
+._pal { padding-top: ($_base-padding * 2) !important; }
 
 ._prn,
 ._phn,
@@ -52,15 +53,15 @@
 
 ._prs,
 ._phs,
-._pas { padding-right: 0.3125em !important; }
+._pas { padding-right: ($_base-padding / 4) !important; }
 
 ._prm,
 ._phm,
-._pam { padding-right: 0.625em !important; }
+._pam { padding-right: $_base-padding !important; }
 
 ._prl,
 ._phl,
-._pal { padding-right: 1.25em !important; }
+._pal { padding-right: ($_base-padding * 2) !important; }
 
 ._pbn,
 ._pvn,
@@ -68,15 +69,15 @@
 
 ._pbs,
 ._pvs,
-._pas { padding-bottom: 0.3125em !important; }
+._pas { padding-bottom: ($_base-padding / 4) !important; }
 
 ._pbm,
 ._pvm,
-._pam { padding-bottom: 0.625em !important; }
+._pam { padding-bottom: $_base-padding !important; }
 
 ._pbl,
 ._pvl,
-._pal { padding-bottom: 1.25em !important; }
+._pal { padding-bottom: ($_base-padding * 2) !important; }
 
 ._pln,
 ._phn,
@@ -84,15 +85,15 @@
 
 ._pls,
 ._phs,
-._pas { padding-left: 0.3125em !important; }
+._pas { padding-left: ($_base-padding / 4) !important; }
 
 ._plm,
 ._phm,
-._pam { padding-left: 0.625em !important; }
+._pam { padding-left: $_base-padding !important; }
 
 ._pll,
 ._phl,
-._pal { padding-left: 1.25em !important; }
+._pal { padding-left: ($_base-padding * 2) !important; }
 
 // Margin helpers
 
@@ -105,15 +106,15 @@
 
 ._mts,
 ._mvs,
-._mas { margin-top: 0.375em !important; }
+._mas { margin-top: ($_base-spacing / 4) !important; }
 
 ._mtm,
 ._mvm,
-._mam { margin-top: 0.75em !important; }
+._mam { margin-top: ($_base-spacing / 2) !important; }
 
 ._mtl,
 ._mvl,
-._mal { margin-top: 1.5em !important; }
+._mal { margin-top: $_base-spacing !important; }
 
 ._mrn,
 ._mhn,
@@ -121,15 +122,15 @@
 
 ._mrs,
 ._mhs,
-._mas { margin-right: 0.375em !important; }
+._mas { margin-right: ($_base-spacing / 4) !important; }
 
 ._mrm,
 ._mhm,
-._mam { margin-right: 0.75em !important; }
+._mam { margin-right: ($_base-spacing / 2) !important; }
 
 ._mrl,
 ._mhl,
-._mal { margin-right: 1.5em !important; }
+._mal { margin-right: $_base-spacing !important; }
 
 ._mbn,
 ._mvn,
@@ -137,15 +138,15 @@
 
 ._mbs,
 ._mvs,
-._mas { margin-bottom: 0.375em !important; }
+._mas { margin-bottom: ($_base-spacing / 4) !important; }
 
 ._mbm,
 ._mvm,
-._mam { margin-bottom: 0.75em !important; }
+._mam { margin-bottom: ($_base-spacing / 2) !important; }
 
 ._mbl,
 ._mvl,
-._mal { margin-bottom: 1.5em !important; }
+._mal { margin-bottom: $_base-spacing !important; }
 
 ._mln,
 ._mhn,
@@ -153,15 +154,15 @@
 
 ._mls,
 ._mhs,
-._mas { margin-left: 0.375em !important; }
+._mas { margin-left: ($_base-spacing / 4) !important; }
 
 ._mlm,
 ._mhm,
-._mam { margin-left: 0.75em !important; }
+._mam { margin-left: ($_base-spacing / 2) !important; }
 
 ._mll,
 ._mhl,
-._mal { margin-left: 1.5em !important; }
+._mal { margin-left: $_base-spacing !important; }
 
 ._mra,
 ._mha { margin-right: auto !important; }
