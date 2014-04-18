@@ -1,35 +1,49 @@
+/* -----------------------------------------------------------------------------
+   Layout : compiled from scss/layout.scss
+   -------------------------------------------------------------------------- */
+
 ._centerBox {
   display: block;
   float: none !important;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 ._cf:after {
   clear: both;
   display: table;
-  content: ""; }
+  content: "";
+}
 
 ._inline {
-  display: inline; }
+  display: inline;
+}
 
 ._inlineBlock {
   display: inline-block;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 ._block {
-  display: block; }
+  display: block;
+}
 
 ._table {
-  display: table; }
+  display: table;
+}
 
 ._tableCell {
-  display: table-cell; }
+  display: table-cell;
+}
 
 ._pull {
-  float: left; }
+  float: left;
+}
 
 ._push {
-  float: right; }
+  float: right;
+}
 
 ._clipContent {
-  overflow: hidden; }
+  overflow: hidden;
+}

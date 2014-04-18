@@ -1,6 +1,11 @@
+/* -----------------------------------------------------------------------------
+   Images : compiled from scss/images.scss
+   -------------------------------------------------------------------------- */
 ._imgFluid {
   height: auto;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 ._imgCircle {
-  border-radius: 50%; }
+  border-radius: 50%;
+}

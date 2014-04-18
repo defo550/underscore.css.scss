@@ -1,10 +1,16 @@
-._listInline, ._listNoStyle {
+/* -----------------------------------------------------------------------------
+   Lists : compiled from scss/lists.scss
+   -------------------------------------------------------------------------- */
+._listInline,
+._listNoStyle {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 ._listInline {
   margin: 0;
-  font-size: 0; }
+  font-size: 0;
+}
 
 ._listInline > li {
   display: inline-block;
@@ -13,4 +19,5 @@
   padding-right: 0.375em;
   font-size: 16px;
   font-size: 1rem;
-  vertical-align: top; }
+  vertical-align: top;
+}

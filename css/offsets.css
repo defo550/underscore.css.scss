@@ -1,7 +1,6 @@
 /* -----------------------------------------------------------------------------
    Offsets: compiled from scss/offsets.scss
    -------------------------------------------------------------------------- */
-
 ._prepend1of2, ._prepend2of4, ._prepend3of6, ._prepend4of8, ._prepend5of10, ._prepend6of12 {
   margin-left: 50%;
 }
