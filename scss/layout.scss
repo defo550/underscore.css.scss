@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // Imports
+@import 'mixins/center-box';
 @import 'mixins/clearfix';
 
 // Adjust the layout of an element.
@@ -24,11 +25,7 @@
 // Center a box relative to its containg box.
 
 ._centerBox {
-  display: block;
-  float: none !important;
-
-  margin-left: auto;
-  margin-right: auto;
+  @include _center-box();
 }
 
 // Clearfix: contain floats
