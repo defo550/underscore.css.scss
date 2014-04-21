@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// Mixins: Text Ellipsis
+// -----------------------------------------------------------------------------
+
+// Add an ellispsis '...' to text.
+
+// 1. Force HTML element to render as `block` element.
+// 2. Set `max-width` on HTML element to perform truncation of text.
+// 3. IE 8/9 fix when parent node has `word-wrap: break-word`.
+//    @resource: https://github.com/chriseppstein/compass/issues/941
+
+@mixin _text-ellipsis() {
+  display: block; // 1
+  overflow: hidden;
+
+  max-width: 100%; // 2
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal; // 3
+}
