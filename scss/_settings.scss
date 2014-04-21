@@ -34,4 +34,12 @@ $_type-line-height: 1.5em !default;
 $_base-spacing: $_type-line-height !default;
 $_base-padding: $_type-line-height / 2 !default;
 
+// Text
+// -----------------------------------------------------------------------------
+
+// Sizing variables
+$_txt-small:  $_type-font-size - 4 !default;
+$_txt-medium: $_type-font-size - 2 !default;
+$_txt-large:  $_type-font-size + 4 !default;
+
 

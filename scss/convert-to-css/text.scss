@@ -1,4 +1,9 @@
+/* -----------------------------------------------------------------------------
+   Text : compiled from scss/text.scss
+   -------------------------------------------------------------------------- */
+
 // Text Manifest file.
 // To be included in sass:dev grunt task for compilation to css.
 
+@import '../settings';
 @import '../text';
