@@ -2,6 +2,9 @@
 // Layout
 // -----------------------------------------------------------------------------
 
+// Imports
+@import 'mixins/clearfix';
+
 // Adjust the layout of an element.
 //
 // Layout helpers typically focus on these properties:
@@ -30,11 +33,8 @@
 
 // Clearfix: contain floats
 
-._cf:after {
-  clear: both;
-  display: table;
-
-  content: "";
+._cf {
+  @include _clearfix();
 }
 
 // Display
