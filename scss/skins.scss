@@ -2,21 +2,18 @@
 //  Skins
 // -----------------------------------------------------------------------------
 
+// Imports
+@import 'mixins/color-variant';
+
 // Skinnable helpers for adjusting HTML elements visually.
 
 // Background Emphasis.
 
 $backgrounds: (
-  _bgDanger: $_theme-danger,
-  _bgGuide: $_theme-guide,
+  _bgDanger:  $_theme-danger,
+  _bgGuide:   $_theme-guide,
   _bgSuccess: $_theme-success,
   _bgWarning: $_theme-warning
 );
 
-@each $background in $backgrounds {
-  $selector: nth($background, 1);
-  $bg-color: nth($background, 2);
-
-  .#{$selector}  { background-color: $bg-color; }
-  a.#{$selector} { background-color: darken($bg-color, 10%); }
-}
+@include _color-variant( $backgrounds, background-color );

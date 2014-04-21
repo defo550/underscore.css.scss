@@ -5,7 +5,7 @@
   background-color: #e74c3c;
 }
 
-a._bgDanger {
+a._bgDanger:hover {
   background-color: #d62c1a;
 }
 
@@ -13,7 +13,7 @@ a._bgDanger {
   background-color: #3498db;
 }
 
-a._bgGuide {
+a._bgGuide:hover {
   background-color: #217dbb;
 }
 
@@ -21,7 +21,7 @@ a._bgGuide {
   background-color: #2ecc71;
 }
 
-a._bgSuccess {
+a._bgSuccess:hover {
   background-color: #25a25a;
 }
 
@@ -29,6 +29,6 @@ a._bgSuccess {
   background-color: #fac75b;
 }
 
-a._bgWarning {
+a._bgWarning:hover {
   background-color: #f8b62a;
 }
