@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// Placeholder Text
+// -----------------------------------------------------------------------------
+
+// Example:
+// input,
+// textarea {
+//  @include placeholder-text {
+//    color: gray;
+//  }
+// }
+
+// 1. Firefox slightly fades placeholder text in `input` types.
+
+@mixin _placeholder {
+  $prefixes: '::-webkit-input',
+             '::-moz', // Firefox 19+
+             ':-ms-input';
+
+  @each $prefix in $prefixes {
+    &#{$prefix}-placeholder {
+      @if $prefix == '::-moz' { opacity: 1; } // 1
+      @content;
+    }
+  }
+}
