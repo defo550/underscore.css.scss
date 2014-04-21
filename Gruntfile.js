@@ -20,10 +20,10 @@ module.exports = function( grunt ) {
     pkg: grunt.file.readJSON('package.json'),
 
     banner : '/**!\n' +
-            '* <%= pkg.name %> v<%= pkg.version %>\n' +
-            '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            '* UnderscoreCSS may be freely distributed under the MIT license.\n' +
-            '*/',
+             '* <%= pkg.name %> v<%= pkg.version %>\n' +
+             '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+             '* UnderscoreCSS may be freely distributed under the MIT license.\n' +
+             '*/',
 
     watch: {
       styles: {
@@ -60,7 +60,7 @@ module.exports = function( grunt ) {
         banner: '<%= banner %>\n'+'\n',
       },
       dist: {
-        src: ['<%= configcssDir %>/*.css'],
+        src: ['<%= config.cssDir %>/*.css'],
         dest: '<%= pkg.name.toLowerCase() %>.css',
       }
     },
