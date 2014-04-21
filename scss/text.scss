@@ -5,6 +5,7 @@
 // Imports
 @import 'functions/rem';
 @import 'mixins/color-variant';
+@import 'mixins/text-ellipsis';
 
 // Adjust the presentation and layout of textual content.
 //
@@ -50,13 +51,7 @@
 // multiple lines.
 
 ._txtEllipsis {
-  overflow: hidden;
-
-  max-width: 100%;
-
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
+  @include _text-ellipsis();
 }
 
 // Text importance.
