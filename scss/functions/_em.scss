@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Mixins: em
+// -----------------------------------------------------------------------------
+
+// Imports
+@import 'strip-unit';
+
+// Convert px value to a em value.
+//
+// @example
+//  _em( 12px );
+//  // returns 0.75em;
+//
+// @param {number} $target - Target px value to convert into a em unit.
+// @param {number} $base=16px - Pixel to convert $target from.
+// @return {number} Returns computed em value.
+// @require _strip-unit.scss
+
+@function _em( $target, $base: $_type_font-size ) {
+
+  @if not unitless( $target ) {
+    $target: _strip-unit( $target );
+  }
+
+  @if not unitless( $base ) {
+    $base: _strip-unit( $base );
+  }
+
+  @return ( $target / $base ) + em;
+
+}

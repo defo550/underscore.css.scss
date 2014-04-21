@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Mixin: Strip unit
+// -----------------------------------------------------------------------------
+
+// Strip unit from the form 12px.
+//
+// @example
+//  strip-unit( 12px );
+//  // returns 12
+//
+// @param {number} $number - Number to strip unit from.
+// @return {number} Returns a unitless number.
+
+@function _strip-unit( $number ) {
+  @return $number / ($number * 0 + 1);
+}

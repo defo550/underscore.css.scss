@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Mixins: rem
+// -----------------------------------------------------------------------------
+
+// Imports
+@import 'strip-unit';
+
+// Convert px value to a rem value.
+//
+// @example
+//  _rem( 12px );
+//  // returns 0.75rem;
+//
+// @param {number} $target - Target px value to convert into a rem unit.
+// @param {number} $base=16px - Pixel to convert $target from.
+// @return {number} Returns computed rem value.
+// @require _strip-unit.scss
+
+@function _rem( $target, $base: $_type_font-size ) {
+
+  @if not unitless( $target ) {
+    $target: _strip-unit( $target );
+  }
+
+  @if not unitless( $base ) {
+    $base: _strip-unit( $base );
+  }
+
+  @return ( $target / $base ) + rem;
+
+}
