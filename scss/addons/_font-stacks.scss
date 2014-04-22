@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// Addons: Font stacks
+// -----------------------------------------------------------------------------
+
+// Additonal font stacks
+// @resource http://cssfontstack.com/
+
+// Sans-serif
+$_arial:          Arial, "Helvetica Neue", Helvetica, sans-serif; !default;
+$_centuryGothic:  "Century Gothic", CenturyGothic, AppleGothic, sans-serif; !default;
+$_futura:         Futura, "Trebuchet MS", Arial, sans-serif; !default;
+$_geneva:         Geneva, Tahoma, Verdana, sans-serif !default;
+$_gill-sans:      "Gill Sans", "Gill Sans MT", Calibri, sans-serif !default;
+$_helvetica:      "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$_impact:         Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif !default;
+$_lucida-grande:  "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !default;
+$_tahoma:         Tahoma, Verdana, Segoe, sans-serif !default;
+$_trebuchet:      "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !default;
+$_verdana:        Verdana, Geneva, sans-serif !default;
+
+// Serif
+$_baskerville:    Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; !default;
+$_cambria:        Cambria, Georgia, Times, "Times New Roman", serif !default;
+$_garamond:       Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
+$_georigia:       Georgia, Times, "Times New Roman", serif !default;
+$_palatino:       Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !default;
+$_times:          TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif !default;
+
+// Monospace
+$_consolas:       Consolas, monaco, monospace !default;
+$_courier-new:    "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !default;
+$_monaco:         Monaco, Consolas, "Lucida Console", monospace !default;
+
+// Fantasy
+$_copperplate:    Copperplate, "Copperplate Gothic Light", fantasy !default;
