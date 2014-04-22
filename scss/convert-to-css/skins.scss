@@ -5,5 +5,11 @@
 // Skins Manifest file.
 // To be included in sass:dev grunt task for compilation to css.
 
+// Imports
+@import '../mixins/color-variant';
+
+// Settings
 @import '../settings';
+
+// Skins
 @import '../skins';
