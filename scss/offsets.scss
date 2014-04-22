@@ -2,10 +2,10 @@
 // Offsets
 // -----------------------------------------------------------------------------
 
-@import 'mixins/sizing';
-
 // Adjust the amount of left or right whitespace of an element.
 // Percentage based offsets sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+//
+// @require mixins/_sizing.scss
 
 // Prepend: Add whitespace to left of element.
 // -----------------------------------------------------------------------------

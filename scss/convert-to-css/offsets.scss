@@ -5,5 +5,11 @@
 // Offsets Manifest file.
 // To be included in sass:dev grunt task for compilation to css.
 
+// Imports
+@import '../mixins/sizing';
+
+// Settings
 @import '../settings';
+
+// Offset
 @import '../offsets';
