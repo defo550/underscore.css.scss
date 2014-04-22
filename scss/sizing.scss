@@ -2,13 +2,13 @@
 // Sizing
 // -----------------------------------------------------------------------------
 
-@import 'mixins/sizing';
-
 // Settings
 
 $prefix: '_size' !default;
 
 // Adjust the width of the content area of an element.
 // Percentage based values sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+//
+// @require mixins/_sizing.scss
 
 @include size( $prefix, 2 3 4 5 6 7 8 10 12 );
