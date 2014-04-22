@@ -5,5 +5,12 @@
 // Layout Manifest file.
 // To be included in sass:dev grunt task for compilation to css.
 
+// Mixins
+@import '../mixins/center-box';
+@import '../mixins/clearfix';
+
+// Settings
 @import '../settings';
+
+// Layout
 @import '../layout';
