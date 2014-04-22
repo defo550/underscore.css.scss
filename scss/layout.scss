@@ -25,13 +25,13 @@
 // Center a box relative to its containg box.
 
 ._centerBox {
-  @include _center-box();
+  @include _center-box;
 }
 
 // Clearfix: contain floats
 
 ._cf {
-  @include _clearfix();
+  @include _clearfix;
 }
 
 // Display
