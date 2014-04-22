@@ -9,7 +9,7 @@
 // 3. IE 8/9 fix when parent node has `word-wrap: break-word`.
 //    @resource: https://github.com/chriseppstein/compass/issues/941
 
-@mixin _text-ellipsis() {
+@mixin _text-ellipsis {
   display: block; // 1
   overflow: hidden;
 
