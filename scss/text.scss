@@ -51,7 +51,7 @@
 // multiple lines.
 
 ._txtEllipsis {
-  @include _text-ellipsis();
+  @include _text-ellipsis;
 }
 
 // Text importance.
