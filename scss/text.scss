@@ -2,11 +2,6 @@
 // Text
 // -----------------------------------------------------------------------------
 
-// Imports
-@import 'functions/rem';
-@import 'mixins/color-variant';
-@import 'mixins/text-ellipsis';
-
 // Adjust the presentation and layout of textual content.
 //
 // Textual helpers typically address a 'Typographical Property':
@@ -27,7 +22,11 @@
 //  `vertical-align`
 //  `white-space`
 //  `word-spacing`
-
+//
+// @require functions/_rem.scss
+// @require mixins/_color-variant.scss
+// @require mixins/_text-ellipsis.scss
+//
 // @todo
 //  Decide if .txtVisuallyHidden belongs here or in layout.scss.
 
