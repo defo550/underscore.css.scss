@@ -722,6 +722,7 @@ a._bgWarning:hover {
 }
 
 ._txtEllipsis {
+  display: block;
   overflow: hidden;
   max-width: 100%;
   text-overflow: ellipsis;
