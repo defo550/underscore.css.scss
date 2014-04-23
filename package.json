@@ -31,6 +31,7 @@
     "load-grunt-tasks": "~0.1.2",
     "time-grunt": "~0.2.10",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-contrib-sass": "^0.7.3"
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-autoprefixer": "^0.7.2"
   }
 }
