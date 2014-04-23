@@ -174,7 +174,7 @@ Example:
     border: 1px solid;
     box-sizing: border-box;
     margin: 10px;
-    margin: 10px;
+    padding: 10px;
 
     background: transparent;
 
