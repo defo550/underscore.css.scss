@@ -19,14 +19,14 @@ The `/css` directory contains all the individual `css` files that make up `under
 Example:
 
   ```css
-    // image.css
+  // image.css
 
-    ._imgFluid {
-      height: auto;
-      max-width: 100%;
-    }
+  ._imgFluid {
+    height: auto;
+    max-width: 100%;
+  }
 
-    ...
+  ...
   ```
 
 Full list of `css` files:
@@ -64,18 +64,18 @@ The `/scss/convert-to-css` contains manifest files for each of the inividual `.s
 Example:
 
   ```css
-    // Layout Manifest file.
-    // To be included in sass:dev grunt task for compilation to css.
+  // Layout Manifest file.
+  // To be included in sass:dev grunt task for compilation to css.
 
-    // Mixins
-    @import '../mixins/center-box';
-    @import '../mixins/clearfix';
+  // Mixins
+  @import '../mixins/center-box';
+  @import '../mixins/clearfix';
 
-    // Settings
-    @import '../settings';
+  // Settings
+  @import '../settings';
 
-    // Layout
-    @import '../layout';
+  // Layout
+  @import '../layout';
   ```
 
 ## Compiling Stylesheets
@@ -87,13 +87,13 @@ Underscore CSS uses [Grunt](http://gruntjs.com/) for task management.
 From a command shell and at root of project:
 
   ```
-    grunt build-css
+  grunt build-css
   ```
 
 If you want to generate `css` on updates to the main `scss` files:
 
   ```
-    grunt listen-scss
+  grunt listen-scss
   ```
 
 Underscorecss also uses the [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) plugin.  Running either command above will parse the CSS and add the appropriate vendor-prefixes using the [Can I use](http://caniuse.com/) database.
@@ -126,13 +126,13 @@ Uses SASS 3+
 2. **Install SASS.**
 
   ```
-    gem install sass
+  gem install sass
   ```
 
 3. **Double-check.**
 
   ```
-    sass -v
+  sass -v
   ```
 
 More information on how to install SASS [here](http://sass-lang.com/install).
@@ -144,7 +144,7 @@ More information on how to install SASS [here](http://sass-lang.com/install).
 All selectors are namespaced with an underscore to avoid any possible naming collisions with your personal application and other third-party libraries.
 
   ```css
-    ._selectorname { ... }
+  ._selectorname { ... }
   ```
 
 ### Declaration order
@@ -166,23 +166,23 @@ Group contexts and order within declaration block are as follows:
 Example:
 
   ```css
-    ._selector {
-      display: block;
-      overflow: hidden;
-      position: relative;
+  ._selector {
+    display: block;
+    overflow: hidden;
+    position: relative;
 
-      border: 1px solid;
-      box-sizing: border-box;
-      margin: 10px;
-      margin: 10px;
+    border: 1px solid;
+    box-sizing: border-box;
+    margin: 10px;
+    margin: 10px;
 
-      background: transparent;
+    background: transparent;
 
-      color: #333;
-      font-size: 16px;
+    color: #333;
+    font-size: 16px;
 
-      list-style: none;
-    }
+    list-style: none;
+  }
 ```
 
 ## Versioning
