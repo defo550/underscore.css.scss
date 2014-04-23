@@ -5,18 +5,17 @@
 @import '../functions/gcd';
 
 // Percentage based mixin.
-
+//
 // To use: pass a space separated list of numbers and an optional string to
 // to create a suffix.
-
-// Example:
-// @include size( '_size', 2 4, --desktop );
 //
-// Takes 4 arguments:
-//  1. $prefix: create selector name
-//  2. Space separated list of numbers for size dimensions.
-//  3. Property to add dimension to.  Defaults to width.
-//  4. Optional suffix: create modifiers, etc.
+// Example:
+// @include size( '_size', 2 4 );
+//
+// @param {string} $prefix - create selector name.
+// @param {(integers)} $size-units - Space separated list of integers.
+// @param {string} $property=width - Property to add dimensions to.
+// @param {string} $suffix= - Add a modifier, etc.
 
 @mixin size( $prefix, $size-units, $property: width, $suffix: '' ) {
 
