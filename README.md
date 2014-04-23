@@ -185,6 +185,17 @@ Example:
     }
 ```
 
+## Versioning
+
+**Underscore CSS** is maintained under the **Semantic Versioning** guidelines as best as possbile.
+
+Releases are numbered `<major><minor><patch>`, increment the:
+
+1. MAJOR version breaking backwards compatibility (reset minor and patch).
+2. MINOR version when you add functionality in a backwards-compatible manner (reset patch).
+3. PATCH version when you make backwards-compatible bug fixes.
+
+For information about Semantic Versioning, visit [semver.org](http://semver.org/).
 
 ## Browser Support
  1. Chrome
