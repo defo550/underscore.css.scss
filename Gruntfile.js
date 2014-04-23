@@ -26,7 +26,7 @@ module.exports = function( grunt ) {
              '*/',
 
     watch: {
-      styles: {
+      scss: {
         files: ['<%= config.scssDir %>/**/*.scss'],
         tasks: ['sass'],
         options: {
@@ -78,16 +78,17 @@ module.exports = function( grunt ) {
     }
   });
 
-  grunt.registerTask('listen', [
-    'watch'
+  grunt.registerTask('listen-scss', [
+    'watch:scss'
   ]);
 
-  grunt.registerTask('build', [
+  grunt.registerTask('build-css', [
     'concat',
     'cssmin'
   ]);
 
   grunt.registerTask('default', [
-    'build'
+    'sass:dev',
+    'build-css'
   ]);
 };
