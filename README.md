@@ -1,37 +1,190 @@
 # Underscore CSS
 
-Underscore CSS is a library for CSS that provides common, reusable, helper
+Underscore CSS is a library for CSS (and sass) that provides common, reusable, helper
 classes for structural, layout, and textual properties.  Best used in large size
 applications with long life-spans and CMS style websites.
 
 ## Main Goals
  - Easy to build upon.
- - Easy to extend.
  - Lightweight.
- - Play nicely with other frameworks and toolkits.
- - Helpers focus on only a few properties.
+ - Easily integrate with other frameworks and toolkits.
+ - Aim to have helpers focus on only a few properties.
+
+## Directory Structure
+
+### CSS
+
+The `/css` directory contains all the individual `css` files that make up `underscorecss.css`.  Each stylesheet provides some basic helpers that addresses the theme of the file name.
+
+Example:
+
+  ```css
+    // image.css
+
+    ._imgFluid {
+      height: auto;
+      max-width: 100%;
+    }
+
+    ...
+  ```
+
+Full list of `css` files:
+
+ - [images.css](https://github.com/defo550/underscoreCSS/blob/master/css/images.css)
+ - [layout.css](https://github.com/defo550/underscoreCSS/blob/master/css/layout.css)
+ - [lists.css](https://github.com/defo550/underscoreCSS/blob/master/css/lists.css)
+ - [offsets.css](https://github.com/defo550/underscoreCSS/blob/master/css/offsets.css)
+ - [sizing.css](https://github.com/defo550/underscoreCSS/blob/master/css/sizing.css)
+ - [spacing.css](https://github.com/defo550/underscoreCSS/blob/master/css/spacing.css)
+ - [text.css](https://github.com/defo550/underscoreCSS/blob/master/css/text.css)
+
+### SCSS
+
+The `/scss` directory contains all the individual `css` files that make up `underscorecss.css` in their `.scss` form.  The `.scss` files also contains more detailed comments explaining what the various selectors address, any specific `imports` the file depends on, etc...
+
+Full list of `scss` files:
+
+ - [images.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/images.scss)
+ - [layout.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/layout.scss)
+ - [lists.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/lists.scss)
+ - [offsets.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/offsets.scss)
+ - [sizing.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/sizing.scss)
+ - [spacing.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/spacing.scss)
+ - [text.scss](https://github.com/defo550/underscoreCSS/blob/master/scss/text.scss)
+
+#### mixins, functions, and addons
+
+The `/scss/mixins`, `/scss/functions`, and `/scss/addons` directories contains some useful helper mixins and functions.
+
+#### convert-to-css
+
+The `/scss/convert-to-css` contains manifest files for each of the inividual `.scss` located in `/scss` directory.  The purpose of these files are for the compilation of the `.css` files that are in `/css` directory.  Each manifest file will conatin the appropriate dependencies (i.e. imports) that is specific to that helper file.
+
+Example:
+
+  ```css
+    // Layout Manifest file.
+    // To be included in sass:dev grunt task for compilation to css.
+
+    // Mixins
+    @import '../mixins/center-box';
+    @import '../mixins/clearfix';
+
+    // Settings
+    @import '../settings';
+
+    // Layout
+    @import '../layout';
+  ```
 
 ## Compiling Stylesheets
 
-Underscore CSS uses [Grunt](http://gruntjs.com/) for minifying and compiling the
-main css files located in the stylesheets directory.
+Underscore CSS uses [Grunt](http://gruntjs.com/) for task management.
 
-To re-compile or generate a new minified underscore css file: From a command
-shell, navigate to the root of your project directory and type `grunt build` or
-`grunt`.
+### Generate `css` files
+
+From a command shell and at root of project:
+
+  ```
+    grunt build-css
+  ```
+
+If you want to generate `css` on updates to the main `scss` files:
+
+  ```
+    grunt listen-scss
+  ```
+
+Underscorecss also uses the [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) plugin.  Running either command above will parse the CSS and add the appropriate vendor-prefixes using the [Can I use](http://caniuse.com/) database.
+
+## Requirement
+
+There are no hard requirements to underscorecss, b/c anybody can just take the `css` files and do as they please, but in order to use the task manager [Grunt](http://gruntjs.com/) or to work with [SASS](http://sass-lang.com/) you will need to install them on your computer.
 
 ### Installing Grunt
 
-Grunt and the assoicated plugins are installed through [npm](https://www.npmjs.org/)
-and [node.js](http://nodejs.org/) package manager.
+Grunt and the associated plugins are installed through [npm](https://www.npmjs.org/),
+package manager for [node.js](http://nodejs.org/).
 
-1. Install Node v0.10.0 or greater.
+1. [Install Node](http://nodejs.org/) v0.10.0 or greater.
 2. From a command shell:
  - `npm install -g grunt-cli`
  - Navigate to project root directory and type `npm install`
 
 **Alternatively** you can go [here](http://gruntjs.com/getting-started) to read
 up on how to install Grunt.
+
+### Installing SASS
+
+Uses SASS 3+
+
+**Note**: SASS has a Ruby dependency.
+
+1. **Open Terminal or Command Prompt.**
+
+2. **Install SASS.**
+
+  ```
+    gem install sass
+  ```
+
+3. **Double-check.**
+
+  ```
+    sass -v
+  ```
+
+More information on how to install SASS [here](http://sass-lang.com/install).
+
+## Styling Format
+
+### Namespace
+
+All selectors are namespaced with an underscore to avoid any possible naming collisions with your personal application and other third-party libraries.
+
+  ```css
+    ._selectorname { ... }
+  ```
+
+### Declaration order
+
+Declaration properties are grouped by context, with a single line seperating each group, and properties arranged in alphabetical order per group.
+
+Group contexts and order within declaration block are as follows:
+
+ 1. layout
+ 2. box
+ 3. background
+ 4. typographical
+ 5. Other
+  - generated content
+  - list properties
+  - table properties
+  - ...
+
+Example:
+
+  ```css
+    ._selector {
+      display: block;
+      overflow: hidden;
+      position: relative;
+
+      border: 1px solid;
+      box-sizing: border-box;
+      margin: 10px;
+      margin: 10px;
+
+      background: transparent;
+
+      color: #333;
+      font-size: 16px;
+
+      list-style: none;
+    }
+```
+
 
 ## Browser Support
  1. Chrome
