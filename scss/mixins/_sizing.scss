@@ -17,7 +17,7 @@
 // @param {string} $property=width - Property to add dimensions to.
 // @param {string} $suffix= - Add a modifier, etc.
 
-@mixin size( $prefix, $size-units, $property: width, $suffix: '' ) {
+@mixin _size( $prefix, $size-units, $property: width, $suffix: '' ) {
 
   @each $var in  $size-units {
 
