@@ -1,0 +1,25 @@
+{
+  "name": "underscorecss",
+  "version": "1.0.0",
+  "homepage": "https://github.com/defo550/underscoreCSS",
+  "authors": [
+    "Christopher DeFelice"
+  ],
+  "description": "CSS helper library.",
+  "main": "underscorecss.css",
+  "keywords": [
+    "css",
+    "sass",
+    "helpers",
+    "utilities",
+    "browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
