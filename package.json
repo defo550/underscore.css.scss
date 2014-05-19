@@ -13,11 +13,11 @@
   "author": "Christopher DeFelice",
   "repository": {
     "type": "git",
-    "url": "https://github.com/defo550/underscoreCSS"
+    "url": "https://github.com/defo550/underscore.css.git"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/defo550/underscoreCSS/blob/master/LICENSE.md"
+    "url": "https://github.com/defo550/underscore.css/blob/master/LICENSE.md"
   },
   "scripts": {
     "build-css": "grunt build-css",
