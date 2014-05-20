@@ -8,7 +8,6 @@ applications with long life-spans and CMS style websites.
  - Easy to build upon.
  - Lightweight.
  - Easily integrate with other frameworks and toolkits.
- - Aim to have helpers focus on only a few properties.
 
 ## Directory Structure
 
