@@ -1,6 +1,6 @@
-# Underscore CSS
+# underscore.css.scss
 
-Underscore CSS is a library for CSS (and sass) that provides common, reusable, helper
+Underscore.css.scss is a library for CSS and SASS that provides common, reusable, helper
 classes for structural, layout, and textual properties.  Best used in large size
 applications with long life-spans and CMS style websites.
 

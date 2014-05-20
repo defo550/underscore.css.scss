@@ -1,12 +1,12 @@
 {
-  "name": "underscore.css",
+  "name": "underscore.css.scss",
   "version": "1.0.1",
-  "homepage": "https://github.com/defo550/underscore.css",
+  "homepage": "https://github.com/defo550/underscore.css.scss",
   "authors": [
     "Christopher DeFelice"
   ],
-  "description": "CSS helper library.",
-  "main": "underscorecss.css",
+  "description": "CSS and SASS helper library.",
+  "main": "underscore.css",
   "keywords": [
     "css",
     "sass",

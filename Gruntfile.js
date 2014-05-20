@@ -10,14 +10,15 @@ module.exports = function( grunt ) {
 
   grunt.initConfig({
 
+    // Imports the JSON metadata stored in package.json.
+    pkg: grunt.file.readJSON('package.json'),
+
     config: {
+      name: '<%= pkg.name.split(\'.\')[0] %>',
       cssDir: 'css',
       scssDir: 'scss',
       convertDir: 'scss/convert-to-css'
     },
-
-    // Imports the JSON metadata stored in package.json.
-    pkg: grunt.file.readJSON('package.json'),
 
     banner : '/**!\n' +
              '* <%= pkg.name %> v<%= pkg.version %>\n' +
@@ -61,7 +62,7 @@ module.exports = function( grunt ) {
       },
       dist: {
         src: ['<%= config.cssDir %>/*.css'],
-        dest: '<%= pkg.name.toLowerCase() %>.css',
+        dest: '<%= config.name %>.css',
       }
     },
 
@@ -72,7 +73,7 @@ module.exports = function( grunt ) {
           report: 'gzip'
         },
         files: {
-          '<%= pkg.name.toLowerCase() %>.min.css': ['<%= config.cssDir %>/*.css']
+          '<%= config.name %>.min.css': ['<%= config.cssDir %>/*.css']
         }
       }
     },

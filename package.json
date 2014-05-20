@@ -1,8 +1,8 @@
 {
-  "name": "underscore.css",
+  "name": "underscore.css.scss",
   "private": true,
   "version": "1.0.1",
-  "description": "CSS helper library.",
+  "description": "CSS and SASS helper library.",
   "keywords": [
     "css",
     "helpers",
@@ -13,11 +13,11 @@
   "author": "Christopher DeFelice",
   "repository": {
     "type": "git",
-    "url": "https://github.com/defo550/underscore.css.git"
+    "url": "https://github.com/defo550/underscore.css.scss.git"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/defo550/underscore.css/blob/master/LICENSE.md"
+    "url": "https://github.com/defo550/underscore.css.scss/blob/master/LICENSE.md"
   },
   "scripts": {
     "build-css": "grunt build-css",
