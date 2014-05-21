@@ -1,8 +1,5 @@
-// UnderscoreCSS
+// Underscore.scss
 // Main manifest file.
-
-// Setttings
-@import 'settings';
 
 // Functions
 @import 'functions/functions';
@@ -12,6 +9,10 @@
 
 // Addons
 @import 'addons/font-stacks';
+@import 'addons/ratio-variables';
+
+// Settings
+@import 'settings';
 
 // Styles
 @import 'images';
