@@ -5,5 +5,11 @@
 // Lists Manifest file.
 // To be included in sass:dev grunt task for compilation to css.
 
+// Functions
+@import '../functions/em';
+
+// Settings
 @import '../settings';
+
+// Lists
 @import '../lists';
