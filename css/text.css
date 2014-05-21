@@ -79,13 +79,13 @@ a._txtWarning:hover {
 }
 
 ._txtSmall {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 ._txtMedium {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 ._txtLarge {
