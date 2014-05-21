@@ -1,4 +1,4 @@
-# underscore.css.scss
+# Underscore.css.scss
 
 Underscore.css.scss is a library for CSS and SASS that provides common, reusable, helper
 classes for structural, layout, and textual properties.  Best used in large size
@@ -13,7 +13,7 @@ applications with long life-spans and CMS style websites.
 
 ### CSS
 
-The `/css` directory contains all the individual `css` files that make up `underscorecss.css`.  Each stylesheet provides some basic helpers that addresses the theme of the file name.
+The `/css` directory contains all the individual `css` files that make up `underscore.css.scss`.  Each stylesheet provides some basic helpers that addresses the theme of the file name.
 
 Example:
 
@@ -40,7 +40,7 @@ Full list of `css` files:
 
 ### SCSS
 
-The `/scss` directory contains all the individual `css` files that make up `underscorecss.css` in their `.scss` form.  The `.scss` files also contains more detailed comments explaining what the various selectors address, any specific `imports` the file depends on, etc...
+The `/scss` directory contains all the individual `css` files that make up `underscore.css.scss` in their `.scss` form.  The `.scss` files also contains more detailed comments explaining what the various selectors address, any specific `imports` the file depends on, etc...
 
 Full list of `scss` files:
 
@@ -79,7 +79,7 @@ Example:
 
 ## Compiling Stylesheets
 
-Underscore CSS uses [Grunt](http://gruntjs.com/) for task management.
+Underscore.css.scss uses [Grunt](http://gruntjs.com/) for task management.
 
 ### Generate `css` files
 
@@ -95,11 +95,11 @@ If you want to generate `css` on updates to the main `scss` files:
   grunt listen-scss
   ```
 
-Underscorecss also uses the [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) plugin.  Running either command above will parse the CSS and add the appropriate vendor-prefixes using the [Can I use](http://caniuse.com/) database.
+Underscore.css.scss also uses the [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) plugin.  Running either command above will parse the CSS and add the appropriate vendor-prefixes using the [Can I use](http://caniuse.com/) database.
 
 ## Requirement
 
-There are no hard requirements to underscorecss, b/c anybody can just take the `css` files and do as they please, but in order to use the task manager [Grunt](http://gruntjs.com/) or to work with [SASS](http://sass-lang.com/) you will need to install them on your computer.
+There are no hard requirements to underscore.css.scss, b/c anybody can just take the `css` files and do as they please, but in order to use the task manager [Grunt](http://gruntjs.com/) or to work with [SASS](http://sass-lang.com/) you will need to install them on your computer.
 
 ### Installing Grunt
 
@@ -186,7 +186,7 @@ Example:
 
 ## Versioning
 
-**Underscore CSS** is maintained under the **Semantic Versioning** guidelines as best as possbile.
+**Underscore.css.scss** is maintained under the **Semantic Versioning** guidelines as best as possbile.
 
 Releases are numbered `<major><minor><patch>`, increment the:
 
@@ -201,7 +201,7 @@ For information about Semantic Versioning, visit [semver.org](http://semver.org/
  2. Firefox
  3. Opera
  4. Safari
- 5. IE 8+
+ 5. IE 8+ (I think!)
 
 ## License
 
