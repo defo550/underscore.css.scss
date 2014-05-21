@@ -60,10 +60,10 @@
 // the declaration blocks.
 
 $txt-colors: (
-  _txtDanger:  $_theme-danger,
-  _txtGuide:   $_theme-guide,
-  _txtSuccess: $_theme-success,
-  _txtWarning: $_theme-warning
+  _txtDanger:  $theme-danger,
+  _txtGuide:   $theme-guide,
+  _txtSuccess: $theme-success,
+  _txtWarning: $theme-warning
 );
 
 @include _color-variant( $txt-colors, color );
@@ -86,18 +86,18 @@ $txt-colors: (
 // 1. Pixel fallback for IE 8.
 
 ._txtSmall  {
-  font-size: $_txt-small; // 1
-  font-size: _rem( $_txt-small );
+  font-size: $txt-small; // 1
+  font-size: _rem( $txt-small );
 }
 
 ._txtMedium {
-  font-size: $_txt-medium; // 1
-  font-size: _rem( $_txt-medium );
+  font-size: $txt-medium; // 1
+  font-size: _rem( $txt-medium );
 }
 
 ._txtLarge {
-  font-size: $_txt-large; // 1
-  font-size: _rem( $_txt-large );
+  font-size: $txt-large; // 1
+  font-size: _rem( $txt-large );
 }
 
 // Transform treamtemnt.

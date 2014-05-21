@@ -37,15 +37,15 @@
 
 ._pts,
 ._pvs,
-._pas { padding-top: ($_base-padding / 4) !important; }
+._pas { padding-top: ($base-padding / 4) !important; }
 
 ._ptm,
 ._pvm,
-._pam { padding-top: $_base-padding !important; }
+._pam { padding-top: $base-padding !important; }
 
 ._ptl,
 ._pvl,
-._pal { padding-top: ($_base-padding * 2) !important; }
+._pal { padding-top: ($base-padding * 2) !important; }
 
 ._prn,
 ._phn,
@@ -53,15 +53,15 @@
 
 ._prs,
 ._phs,
-._pas { padding-right: ($_base-padding / 4) !important; }
+._pas { padding-right: ($base-padding / 4) !important; }
 
 ._prm,
 ._phm,
-._pam { padding-right: $_base-padding !important; }
+._pam { padding-right: $base-padding !important; }
 
 ._prl,
 ._phl,
-._pal { padding-right: ($_base-padding * 2) !important; }
+._pal { padding-right: ($base-padding * 2) !important; }
 
 ._pbn,
 ._pvn,
@@ -69,15 +69,15 @@
 
 ._pbs,
 ._pvs,
-._pas { padding-bottom: ($_base-padding / 4) !important; }
+._pas { padding-bottom: ($base-padding / 4) !important; }
 
 ._pbm,
 ._pvm,
-._pam { padding-bottom: $_base-padding !important; }
+._pam { padding-bottom: $base-padding !important; }
 
 ._pbl,
 ._pvl,
-._pal { padding-bottom: ($_base-padding * 2) !important; }
+._pal { padding-bottom: ($base-padding * 2) !important; }
 
 ._pln,
 ._phn,
@@ -85,15 +85,15 @@
 
 ._pls,
 ._phs,
-._pas { padding-left: ($_base-padding / 4) !important; }
+._pas { padding-left: ($base-padding / 4) !important; }
 
 ._plm,
 ._phm,
-._pam { padding-left: $_base-padding !important; }
+._pam { padding-left: $base-padding !important; }
 
 ._pll,
 ._phl,
-._pal { padding-left: ($_base-padding * 2) !important; }
+._pal { padding-left: ($base-padding * 2) !important; }
 
 // Margin helpers
 
@@ -106,15 +106,15 @@
 
 ._mts,
 ._mvs,
-._mas { margin-top: ($_base-spacing / 4) !important; }
+._mas { margin-top: ($base-spacing / 4) !important; }
 
 ._mtm,
 ._mvm,
-._mam { margin-top: ($_base-spacing / 2) !important; }
+._mam { margin-top: ($base-spacing / 2) !important; }
 
 ._mtl,
 ._mvl,
-._mal { margin-top: $_base-spacing !important; }
+._mal { margin-top: $base-spacing !important; }
 
 ._mrn,
 ._mhn,
@@ -122,15 +122,15 @@
 
 ._mrs,
 ._mhs,
-._mas { margin-right: ($_base-spacing / 4) !important; }
+._mas { margin-right: ($base-spacing / 4) !important; }
 
 ._mrm,
 ._mhm,
-._mam { margin-right: ($_base-spacing / 2) !important; }
+._mam { margin-right: ($base-spacing / 2) !important; }
 
 ._mrl,
 ._mhl,
-._mal { margin-right: $_base-spacing !important; }
+._mal { margin-right: $base-spacing !important; }
 
 ._mbn,
 ._mvn,
@@ -138,15 +138,15 @@
 
 ._mbs,
 ._mvs,
-._mas { margin-bottom: ($_base-spacing / 4) !important; }
+._mas { margin-bottom: ($base-spacing / 4) !important; }
 
 ._mbm,
 ._mvm,
-._mam { margin-bottom: ($_base-spacing / 2) !important; }
+._mam { margin-bottom: ($base-spacing / 2) !important; }
 
 ._mbl,
 ._mvl,
-._mal { margin-bottom: $_base-spacing !important; }
+._mal { margin-bottom: $base-spacing !important; }
 
 ._mln,
 ._mhn,
@@ -154,15 +154,15 @@
 
 ._mls,
 ._mhs,
-._mas { margin-left: ($_base-spacing / 4) !important; }
+._mas { margin-left: ($base-spacing / 4) !important; }
 
 ._mlm,
 ._mhm,
-._mam { margin-left: ($_base-spacing / 2) !important; }
+._mam { margin-left: ($base-spacing / 2) !important; }
 
 ._mll,
 ._mhl,
-._mal { margin-left: $_base-spacing !important; }
+._mal { margin-left: $base-spacing !important; }
 
 ._mra,
 ._mha { margin-right: auto !important; }

@@ -9,10 +9,10 @@
 // Background Emphasis.
 
 $backgrounds: (
-  _bgDanger:  $_theme-danger,
-  _bgGuide:   $_theme-guide,
-  _bgSuccess: $_theme-success,
-  _bgWarning: $_theme-warning
+  _bgDanger:  $theme-danger,
+  _bgGuide:   $theme-guide,
+  _bgSuccess: $theme-success,
+  _bgWarning: $theme-warning
 );
 
 @include _color-variant( $backgrounds, background-color );

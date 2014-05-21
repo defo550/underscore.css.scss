@@ -2,43 +2,40 @@
 // Setttings
 // -----------------------------------------------------------------------------
 
-// Variables namespaced with an `_` to avoid naming collisions with personal
-// application/site.
-
 // Colors
 // -----------------------------------------------------------------------------
 
 // Grays
-$_gray-darker:           #222 !default;
-$_gray-dark:             #333 !default;
-$_gray:                  #555 !default;
-$_gray-light:            #999 !default;
-$_gray-lighter:          #eee !default;
+$gray-darker:           #222 !default;
+$gray-dark:             #333 !default;
+$gray:                  #555 !default;
+$gray-light:            #999 !default;
+$gray-lighter:          #eee !default;
 
 // Theme colors
-$_theme-danger:          #e74c3c !default;
-$_theme-guide:           #3498db !default;
-$_theme-success:         #2ecc71 !default;
-$_theme-warning:         #fac75b !default;
+$theme-danger:          #e74c3c !default;
+$theme-guide:           #3498db !default;
+$theme-success:         #2ecc71 !default;
+$theme-warning:         #fac75b !default;
 
 // Typography
 // -----------------------------------------------------------------------------
 
-$_type-font-size:   16px !default;
-$_type-line-height: 1.5em !default;
+$type-font-size:   16px !default;
+$type-line-height: 1.5em !default;
 
 // Scaffolding
 // -----------------------------------------------------------------------------
 
-$_base-spacing: $_type-line-height !default;
-$_base-padding: $_type-line-height / 2 !default;
+$base-spacing: $type-line-height !default;
+$base-padding: $type-line-height / 2 !default;
 
 // Text
 // -----------------------------------------------------------------------------
 
 // Sizing variables
-$_txt-small:  $_type-font-size - 4 !default;
-$_txt-medium: $_type-font-size - 2 !default;
-$_txt-large:  $_type-font-size + 4 !default;
+$txt-small:  $type-font-size - 4 !default;
+$txt-medium: $type-font-size - 2 !default;
+$txt-large:  $type-font-size + 4 !default;
 
 
