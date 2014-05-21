@@ -3,8 +3,9 @@
 // -----------------------------------------------------------------------------
 
 // Main mixin manifest file.
-// Easily import all underscorecss mixins to a desired location.
+// Easily import all underscore.css.scss mixins to a desired location.
 
+@import 'breakpoint';
 @import 'center-box';
 @import 'clearfix';
 @import 'color-variant';

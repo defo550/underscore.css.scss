@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// Mixins: Breakpoint
+// -----------------------------------------------------------------------------
+
+// Create media query blocks.
+//
+// @param {map} $breakpoints - A SASS map.
+// @param {key} $size - A key that exists in the $breakpoints map.
+//
+// @example
+//  $breakpoints: (
+//   'sm': ( min-width: 768px ),
+//   'md': ( min-width: 1200px ),
+//   'lg': ( min-width: 1400px )
+//  );
+//
+//  .foo {
+//    width: 100%
+//    @include breakpoint( md ) {
+//      width: 50%;
+//    }
+//  }
+//
+// Will output:
+//  .foo {
+//    width: 100%;
+//  }
+//
+//  @media (min-width: 1200px) {
+//    .foo {
+//      width: 50%;
+//    }
+//  }
+
+@mixin _breakpoint( $size ) {
+  @if map-has-key( $breakpoints, $size ) {
+    @media #{inspect( map-get( $breakpoints, $size ) )} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint `#{$size}` could not be found.";
+  }
+}
