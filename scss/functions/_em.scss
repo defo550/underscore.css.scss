@@ -16,7 +16,7 @@
 // @return {number} Returns computed em value.
 // @require _strip-unit.scss
 
-@function _em( $target, $base: $type_font-size ) {
+@function _em( $target, $base: $type-font-size ) {
 
   @if not unitless( $target ) {
     $target: _strip-unit( $target );
