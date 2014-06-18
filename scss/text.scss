@@ -59,13 +59,6 @@
 // Append key/value pair to $txt-colors to have _color-variant mixin produce
 // the declaration blocks.
 
-$txt-colors: (
-  _txtDanger:  $theme-danger,
-  _txtGuide:   $theme-guide,
-  _txtSuccess: $theme-success,
-  _txtWarning: $theme-warning
-);
-
 @include _color-variant( $txt-colors, color );
 
 // Word breaking

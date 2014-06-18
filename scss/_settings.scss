@@ -27,6 +27,14 @@ $base-spacing-medium: $base-spacing / 2 !default;
 // Text
 // -----------------------------------------------------------------------------
 
+// Text importance
+$txt-colors: (
+  _txtDanger:  $theme-danger,
+  _txtGuide:   $theme-guide,
+  _txtSuccess: $theme-success,
+  _txtWarning: $theme-warning
+) !default;
+
 // Sizing variables
 $txt-small:  floor( _ms( $type-font-size, -2, 1.25 ) ) !default; // 10px
 $txt-medium: ceil( _ms( $type-font-size, -1, 1.25 ) ) !default; // 13px
