@@ -69,6 +69,12 @@
   word-wrap: break-word;
 }
 
+// Inherit parents text color.
+
+._txtInheritColor {
+  color: inherit;
+}
+
 // Sizing treatments.
 //
 // Limit the amount of font-size delcarations.

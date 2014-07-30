@@ -1,5 +1,5 @@
 /**!
-* underscore.css.scss v2.1.0
+* underscore.css.scss v2.2.0
 * Copyright 2014 Christopher DeFelice
 * UnderscoreCSS may be freely distributed under the MIT license.
 */
@@ -788,6 +788,10 @@ a._txtWarning:hover {
 
 ._txtBreak {
   word-wrap: break-word;
+}
+
+._txtInheritColor {
+  color: inherit;
 }
 
 ._txtSmall {

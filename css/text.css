@@ -78,6 +78,10 @@ a._txtWarning:hover {
   word-wrap: break-word;
 }
 
+._txtInheritColor {
+  color: inherit;
+}
+
 ._txtSmall {
   font-size: 10px;
   font-size: 0.625rem;
