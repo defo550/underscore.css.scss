@@ -1,7 +1,7 @@
 {
   "name": "underscore.css.scss",
   "private": true,
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "CSS and SASS helper library.",
   "keywords": [
     "css",
