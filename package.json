@@ -1,7 +1,7 @@
 {
   "name": "underscore.css.scss",
   "private": true,
-  "version": "2.3.2",
+  "version": "2.4.0",
   "description": "CSS and SASS helper library.",
   "keywords": [
     "css",
@@ -31,7 +31,7 @@
     "load-grunt-tasks": "~0.1.2",
     "time-grunt": "~0.2.10",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-sass": "^0.8.1",
     "grunt-autoprefixer": "^0.7.2"
   }
 }

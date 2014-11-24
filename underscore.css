@@ -1,5 +1,5 @@
 /**!
-* underscore.css.scss v2.2.0
+* underscore.css.scss v2.4.0
 * Copyright 2014 Christopher DeFelice
 * UnderscoreCSS may be freely distributed under the MIT license.
 */
@@ -63,6 +63,22 @@
 
 ._clipContent {
   overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------------
+   Links : compile from scss/_links.scss
+   ------------------------------------------------------------------------- */
+._linkPlain,
+._linkPlain:hover
+._linkPlain:focus
+._linkPlain:active {
+  text-decoration: none !important;
+}
+
+._linkPlain:hover ._linkPlain-decor,
+._linkPlain:focus ._linkPlain-decor,
+._linkPlain:active ._linkPlain-decor {
+  text-decoration: underline !important;
 }
 
 /* -----------------------------------------------------------------------------
