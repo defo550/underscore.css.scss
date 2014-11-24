@@ -29,7 +29,7 @@ module.exports = function( grunt ) {
     watch: {
       scss: {
         files: ['<%= config.scssDir %>/**/*.scss'],
-        tasks: ['sass', 'autoprefixer'],
+        tasks: ['sass:dev', 'autoprefixer'],
         options: {
           livereload: true // needed to run LiveReload
         }
@@ -39,12 +39,14 @@ module.exports = function( grunt ) {
     sass: {
       dev: {
         options: {
+          sourcemap: 'none',
           style: 'expanded'
         },
 
         files: {
           '<%= config.cssDir %>/images.css': '<%= config.convertDir %>/images.scss',
           '<%= config.cssDir %>/layout.css': '<%= config.convertDir %>/layout.scss',
+          '<%= config.cssDir %>/links.css': '<%= config.convertDir %>/links.scss',
           '<%= config.cssDir %>/lists.css': '<%= config.convertDir %>/lists.scss',
           '<%= config.cssDir %>/offsets.css': '<%= config.convertDir %>/offsets.scss',
           '<%= config.cssDir %>/sizing.css': '<%= config.convertDir %>/sizing.scss',
