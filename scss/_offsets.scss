@@ -10,9 +10,9 @@
 // Prepend: Add whitespace to left of element.
 // -----------------------------------------------------------------------------
 
-@include _size( '_prepend', 2 3 4 5 6 7 8 10 12, $property: margin-left );
+@include _size( '_prepend', 2 3 4 5 6 7 8 10 12, $property: margin-left, $important: false );
 
 // Append: Add whitespace to right of element
 // -----------------------------------------------------------------------------
 
-@include _size( '_append', 2 3 4 5 6 7 8 10 12, $property: margin-right );
+@include _size( '_append', 2 3 4 5 6 7 8 10 12, $property: margin-right, $important: false );
