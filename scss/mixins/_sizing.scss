@@ -16,8 +16,9 @@
 // @param {(integers)} $size-units - Space separated list of integers.
 // @param {string} $property=width - Property to add dimensions to.
 // @param {string} $suffix= - Add a modifier, etc.
+// @param {boolean} $important - Add '!important' to your sizing declarations.
 
-@mixin _size( $prefix, $size-units, $property: width, $suffix: '' ) {
+@mixin _size( $prefix, $size-units, $property: width, $suffix: '', $important: true ) {
 
   @each $var in  $size-units {
 
@@ -33,7 +34,7 @@
           @extend .#{$prefix}#{$x}of#{$var / $gcd}#{$suffix}
         }
         @else {
-         #{$property}: percentage( $i / $var );
+         #{$property}: percentage( $i / $var ) if($important, !important, null);
         }
       }
     }
