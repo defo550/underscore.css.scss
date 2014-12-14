@@ -101,9 +101,9 @@
 
 // Transform treamtemnt.
 
-._txtUpcase {
-  text-transform: uppercase;
-}
+._txtUpcase     { text-transform: uppercase; }
+._txtLowcase    { text-transform: lowercase; }
+._txtCapitalize { text-transform: capitalize; }
 
 // Hide text visually but leave available for screenreaders: h5bp.com/v.
 

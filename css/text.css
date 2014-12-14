@@ -101,6 +101,14 @@ a._txtWarning:hover {
   text-transform: uppercase;
 }
 
+._txtLowcase {
+  text-transform: lowercase;
+}
+
+._txtCapitalize {
+  text-transform: capitalize;
+}
+
 ._txtVisuallyHidden {
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
