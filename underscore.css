@@ -1,5 +1,5 @@
 /**!
-* underscore.css.scss v2.4.0
+* underscore.css.scss v2.5.0
 * Copyright 2014 Christopher DeFelice
 * UnderscoreCSS may be freely distributed under the MIT license.
 */
@@ -827,6 +827,14 @@ a._txtWarning:hover {
 
 ._txtUpcase {
   text-transform: uppercase;
+}
+
+._txtLowcase {
+  text-transform: lowercase;
+}
+
+._txtCapitalize {
+  text-transform: capitalize;
 }
 
 ._txtVisuallyHidden {
