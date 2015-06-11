@@ -1,7 +1,3 @@
-/* -----------------------------------------------------------------------------
-   Layout : compiled from scss/layout.scss
-   -------------------------------------------------------------------------- */
-
 // Layout Manifest file.
 // To be included in sass:dev grunt task for compilation to css.
 
@@ -11,6 +7,7 @@
 // Mixins
 @import '../mixins/center-box';
 @import '../mixins/clearfix';
+@import '../mixins/visuallyhidden';
 
 // Settings
 @import '../settings';
