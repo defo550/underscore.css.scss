@@ -18,12 +18,33 @@
         color: #333;
         text-align: center;
       }
+
+      .box--size {
+        height: 64px;
+        width: 64px;
+      }
     </style>
   </head>
   <body>
     <div class="_container">
       <h1>Underscore CSS - Sizing</h1>
       <p>Welcome to the test page for "Underscore CSS" sizing helpers.</p>
+
+      <h2>Size compact</h2>
+      <div class="_cf">
+        <div class="_sizeCompact box"><code>_sizeCompact</code></div>
+        <div class="_sizeCompactRight box"><code>_sizeCompactRight</code></div>
+      </div>
+
+      <h2>Size compact and occupy</h2>
+      <div class="_cf">
+        <div class="_sizeCompact _prl">
+          <div class="box">_sizeCompact</div>
+        </div>
+        <div class="_sizeOccupy box">
+          _sizeOccupy
+        </div>
+      </div>
 
       <h2>Divisibles of 2</h2>
       <div class="_size1of2 box">_size1of2</div>

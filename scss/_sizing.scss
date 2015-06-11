@@ -1,14 +1,68 @@
-// -----------------------------------------------------------------------------
-// Sizing
-// -----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
+   Sizing helpers
+   ------------------------------------------------------------------------- */
 
-// Settings
+/* Intrinsic sizes
+   ------------------------------------------------------------------------- */
 
-$prefix: '_size' !default;
+/**
+ * Shared styles.
+ */
 
-// Adjust the width of the content area of an element.
-// Percentage based values sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
-//
-// @require mixins/_sizing.scss
+%sharedStyles {
+  display: block !important;
+}
 
-@include _size( $prefix, 2 3 4 5 6 7 8 10 12, $important: false );
+/**
+ * Wrap tightly an elements content.
+ */
+
+._sizeCompact,
+._sizeCompactRight {
+  @extend %sharedStyles;
+
+  width: auto !important;
+}
+
+._sizeCompact {
+  float: left !important;
+}
+
+._sizeCompactRight {
+  float: right !important;
+}
+
+/**
+ * Element occupies all available space.
+ */
+
+._sizeOccupy {
+  @extend %sharedStyles;
+
+  overflow: hidden !important;
+
+  width: auto !important;
+}
+
+/**
+ * Element fills entire space of parent.
+ */
+
+._sizeFull {
+  @extend %sharedStyles;
+
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+/* Proportionate sizes
+   ------------------------------------------------------------------------- */
+
+/**
+ * Adjust the width of the content area of an element.
+ * Percentage based values sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+ *
+ * @require mixins/_sizing.scss
+ */
+
+@include _size( "_size", 2 3 4 5 6 7 8 10 12, $important: true );

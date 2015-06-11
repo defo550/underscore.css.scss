@@ -1,6 +1,6 @@
 /**!
-* underscore.css.scss v2.5.0
-* Copyright 2014 Christopher DeFelice
+* underscore.css.scss v2.6.0
+* Copyright 2015 Christopher DeFelice
 * UnderscoreCSS may be freely distributed under the MIT license.
 */
 
@@ -343,120 +343,171 @@
 /* -----------------------------------------------------------------------------
    Sizing: compiled from scss/sizing.scss
    -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+   Sizing helpers
+   ------------------------------------------------------------------------- */
+/* Intrinsic sizes
+   ------------------------------------------------------------------------- */
+/**
+ * Shared styles.
+ */
+._sizeCompact,
+._sizeCompactRight, ._sizeOccupy, ._sizeFull {
+  display: block !important;
+}
+
+/**
+ * Wrap tightly an elements content.
+ */
+._sizeCompact,
+._sizeCompactRight {
+  float: left !important;
+  width: auto !important;
+}
+
+._sizeCompactRight {
+  float: right !important;
+}
+
+/**
+ * Element occupies all available space.
+ */
+._sizeOccupy {
+  overflow: hidden !important;
+  width: auto !important;
+}
+
+/**
+ * Element fills entire space of parent.
+ */
+._sizeFull {
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+/* Proportionate sizes
+   ------------------------------------------------------------------------- */
+/**
+ * Adjust the width of the content area of an element.
+ * Percentage based values sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+ *
+ * @require mixins/_sizing.scss
+ */
 ._size1of2, ._size2of4, ._size3of6, ._size4of8, ._size5of10, ._size6of12 {
-  width: 50%;
+  width: 50% !important;
 }
 
 ._size1of3, ._size2of6, ._size4of12 {
-  width: 33.33333%;
+  width: 33.33333% !important;
 }
 
 ._size2of3, ._size4of6, ._size8of12 {
-  width: 66.66667%;
+  width: 66.66667% !important;
 }
 
 ._size1of4, ._size2of8, ._size3of12 {
-  width: 25%;
+  width: 25% !important;
 }
 
 ._size3of4, ._size6of8, ._size9of12 {
-  width: 75%;
+  width: 75% !important;
 }
 
 ._size1of5, ._size2of10 {
-  width: 20%;
+  width: 20% !important;
 }
 
 ._size2of5, ._size4of10 {
-  width: 40%;
+  width: 40% !important;
 }
 
 ._size3of5, ._size6of10 {
-  width: 60%;
+  width: 60% !important;
 }
 
 ._size4of5, ._size8of10 {
-  width: 80%;
+  width: 80% !important;
 }
 
 ._size1of6, ._size2of12 {
-  width: 16.66667%;
+  width: 16.66667% !important;
 }
 
 ._size5of6, ._size10of12 {
-  width: 83.33333%;
+  width: 83.33333% !important;
 }
 
 ._size1of7 {
-  width: 14.28571%;
+  width: 14.28571% !important;
 }
 
 ._size2of7 {
-  width: 28.57143%;
+  width: 28.57143% !important;
 }
 
 ._size3of7 {
-  width: 42.85714%;
+  width: 42.85714% !important;
 }
 
 ._size4of7 {
-  width: 57.14286%;
+  width: 57.14286% !important;
 }
 
 ._size5of7 {
-  width: 71.42857%;
+  width: 71.42857% !important;
 }
 
 ._size6of7 {
-  width: 85.71429%;
+  width: 85.71429% !important;
 }
 
 ._size1of8 {
-  width: 12.5%;
+  width: 12.5% !important;
 }
 
 ._size3of8 {
-  width: 37.5%;
+  width: 37.5% !important;
 }
 
 ._size5of8 {
-  width: 62.5%;
+  width: 62.5% !important;
 }
 
 ._size7of8 {
-  width: 87.5%;
+  width: 87.5% !important;
 }
 
 ._size1of10 {
-  width: 10%;
+  width: 10% !important;
 }
 
 ._size3of10 {
-  width: 30%;
+  width: 30% !important;
 }
 
 ._size7of10 {
-  width: 70%;
+  width: 70% !important;
 }
 
 ._size9of10 {
-  width: 90%;
+  width: 90% !important;
 }
 
 ._size1of12 {
-  width: 8.33333%;
+  width: 8.33333% !important;
 }
 
 ._size5of12 {
-  width: 41.66667%;
+  width: 41.66667% !important;
 }
 
 ._size7of12 {
-  width: 58.33333%;
+  width: 58.33333% !important;
 }
 
 ._size11of12 {
-  width: 91.66667%;
+  width: 91.66667% !important;
 }
 
 /* -----------------------------------------------------------------------------
