@@ -1,11 +1,11 @@
-// ----------------------------------------------------------------------------
-// Links
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
+   Link helpers (compile from scss/_links.scss)
+   ------------------------------------------------------------------------- */
 
-// Link helpers.
-
-// Plain link
-// Link without `text-decoration`.
+/**
+ * Plain link
+ * Link without `text-decoration`.
+ */
 
 ._linkPlain,
 ._linkPlain:hover
@@ -14,16 +14,18 @@
   text-decoration: none !important;
 }
 
-// For links with multiple child nodes where one or more of those nodes
-// require a underline.
-//
-// Example:
-//
-// <a class="_linkPlain" href="#">
-//  link text
-//  <span class="_linkPlain-decor">decorative styles for link</span>
-//  link description
-// </a>
+/**
+ * For links with multiple child nodes where one or more of those nodes
+ * require a underline.
+ *
+ * Example:
+ *
+ * <a class="_linkPlain" href="#">
+ *  link text
+ *  <span class="_linkPlain-decor">decorative styles for link</span>
+ *  link description
+ * </a>
+ */
 
 ._linkPlain:hover,
 ._linkPlain:focus,
