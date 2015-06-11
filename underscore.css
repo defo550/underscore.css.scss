@@ -340,11 +340,8 @@
   margin-right: 91.66667%;
 }
 
-/* -----------------------------------------------------------------------------
-   Sizing: compiled from scss/sizing.scss
-   -------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------
-   Sizing helpers
+    Sizing helpers (compiled from /scss/sizing.scss)
    ------------------------------------------------------------------------- */
 /* Intrinsic sizes
    ------------------------------------------------------------------------- */
@@ -361,8 +358,11 @@
  */
 ._sizeCompact,
 ._sizeCompactRight {
-  float: left !important;
   width: auto !important;
+}
+
+._sizeCompact {
+  float: left !important;
 }
 
 ._sizeCompactRight {
