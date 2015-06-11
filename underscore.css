@@ -1125,6 +1125,10 @@ a._txtWarning:hover {
 /**
  * Transform treamtemnt.
  */
+._txtJustify {
+  text-transform: justify;
+}
+
 ._txtUpcase {
   text-transform: uppercase;
 }
