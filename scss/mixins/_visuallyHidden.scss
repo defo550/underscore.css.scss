@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Mixin: Visually hidden
+// ----------------------------------------------------------------------------
+
+// Hide text visually but leave available for screenreaders: h5bp.com/v.
+
+@mixin _visuallyHidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute;
+
+  border: 0;
+  height: 1px;
+  padding: 0;
+  width: 1px;
+}
