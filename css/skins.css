@@ -1,6 +1,14 @@
-/* -----------------------------------------------------------------------------
-   Skins: compiled from scss/skins.scss
-   -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+   Skin helpers (compiled from scss/skins.scss)
+   ------------------------------------------------------------------------- */
+/**
+ * Skinnable helpers for adjusting HTML elements visually.
+ *
+ * @require mixins/_color-variant.scss
+ */
+/**
+ * Background Emphasis.
+ */
 ._bgDanger {
   background-color: #e74c3c;
 }

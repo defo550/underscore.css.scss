@@ -1,35 +1,38 @@
-// -----------------------------------------------------------------------------
-// Spacing
-// -----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
+   Spacing helpers (compiled from scss/spacing.scss)
+   ------------------------------------------------------------------------- */
 
-// Adjust the whitespace and padding around an element.
+/**
+ * Adjust the whitespace and padding around an element.
+ *
+ * Legend:
+ * _<type><direction><size>
+ *
+ * Type:
+ * m = margin
+ * p = padding
+ *
+ * Direction:
+ * a = all
+ * b = bottom
+ * h = horizontal
+ * l = left
+ * r = right
+ * t = top
+ * v = vertical
+ *
+ * Size:
+ * l = large
+ * m = medium
+ * n = none
+ * s = small
+ * a = auto
+ *
+ * Idea was originally adopted here: https://github.com/stubbornella/oocss
+ */
 
-// Legend:
-// _<type><direction><size>
-
-// Type:
-// m = margin
-// p = padding
-
-// Direction:
-// a = all
-// b = bottom
-// h = horizontal
-// l = left
-// r = right
-// t = top
-// v = vertical
-
-// Size:
-// l = large
-// m = medium
-// n = none
-// s = small
-// a = auto
-
-// Idea was originally adopted here: https://github.com/stubbornella/oocss
-
-// Padding helpers
+/* Padding helpers
+   ------------------------------------------------------------------------- */
 
 ._ptn,
 ._pvn,
@@ -131,7 +134,8 @@
   padding-left: _rem( $base-spacing ) !important;
 }
 
-// Margin helpers
+/* Margin helpers
+   ------------------------------------------------------------------------- */
 
 ._mtn,
 ._mvn,

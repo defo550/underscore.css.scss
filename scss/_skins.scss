@@ -1,11 +1,15 @@
-// -----------------------------------------------------------------------------
-//  Skins
-// -----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
+   Skin helpers (compiled from scss/skins.scss)
+   ------------------------------------------------------------------------- */
 
-// Skinnable helpers for adjusting HTML elements visually.
-//
-// @require mixins/_color-variant.scss
+/**
+ * Skinnable helpers for adjusting HTML elements visually.
+ *
+ * @require mixins/_color-variant.scss
+ */
 
-// Background Emphasis.
+/**
+ * Background Emphasis.
+ */
 
 @include _color-variant( $backgrounds, background-color );

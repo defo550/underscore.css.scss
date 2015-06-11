@@ -646,9 +646,17 @@
   width: 91.66667% !important;
 }
 
-/* -----------------------------------------------------------------------------
-   Skins: compiled from scss/skins.scss
-   -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+   Skin helpers (compiled from scss/skins.scss)
+   ------------------------------------------------------------------------- */
+/**
+ * Skinnable helpers for adjusting HTML elements visually.
+ *
+ * @require mixins/_color-variant.scss
+ */
+/**
+ * Background Emphasis.
+ */
 ._bgDanger {
   background-color: #e74c3c;
 }
@@ -681,9 +689,39 @@ a._bgWarning:hover {
   background-color: #f8b62a;
 }
 
-/* -----------------------------------------------------------------------------
-   Spacing : compiled from scss/spacing.scss
-   -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+   Spacing helpers (compiled from scss/spacing.scss)
+   ------------------------------------------------------------------------- */
+/**
+ * Adjust the whitespace and padding around an element.
+ *
+ * Legend:
+ * _<type><direction><size>
+ *
+ * Type:
+ * m = margin
+ * p = padding
+ *
+ * Direction:
+ * a = all
+ * b = bottom
+ * h = horizontal
+ * l = left
+ * r = right
+ * t = top
+ * v = vertical
+ *
+ * Size:
+ * l = large
+ * m = medium
+ * n = none
+ * s = small
+ * a = auto
+ *
+ * Idea was originally adopted here: https://github.com/stubbornella/oocss
+ */
+/* Padding helpers
+   ------------------------------------------------------------------------- */
 ._ptn,
 ._pvn,
 ._pan {
@@ -792,6 +830,8 @@ a._bgWarning:hover {
   padding-left: 1.5rem !important;
 }
 
+/* Margin helpers
+   ------------------------------------------------------------------------- */
 ._mtn,
 ._mvn,
 ._man,
@@ -916,6 +956,39 @@ a._bgWarning:hover {
 /* -----------------------------------------------------------------------------
    Text : compiled from scss/text.scss
    -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+   Text helpers (compiled from scss/text.scss)
+   ------------------------------------------------------------------------- */
+/**
+ * Adjust the textual structure of a element.
+ *
+ * Textual helpers typically address a 'Typographical Property':
+ *  `color`
+ *  `direction`
+ *  `font`
+ *  `font-family`
+ *  `font-size`
+ *  `font-style`
+ *  `font-variant`
+ *  `font-weight`
+ *  `letter-spacing`
+ *  `text-align`
+ *  `text-decoration`
+ *  `text-indent`
+ *  `text-shadow`
+ *  `text-transform`
+ *  `vertical-align`
+ *  `white-space`
+ *  `word-spacing`
+ *
+ * @require functions/_rem.scss
+ * @require mixins/_color-variant.scss
+ * @require mixins/_text-ellipsis.scss
+ *
+ */
+/**
+ * Adjust text horizontally.
+ */
 ._txtLeft {
   text-align: left;
 }
@@ -932,6 +1005,9 @@ a._bgWarning:hover {
   text-align: justify;
 }
 
+/**
+ * Ajust text vertically.
+ */
 ._txtTop {
   vertical-align: top;
 }
@@ -948,6 +1024,12 @@ a._bgWarning:hover {
   vertical-align: baseline;
 }
 
+/**
+ * Text Ellipsis
+ *
+ * Add an ellipsis '...' to text that is prevented from wrapping onto
+ * multiple lines.
+ */
 ._txtEllipsis {
   display: block;
   overflow: hidden;
@@ -957,6 +1039,13 @@ a._bgWarning:hover {
   word-wrap: normal;
 }
 
+/**
+ * Text importance.
+ * <selector>: <color>
+ *
+ * Append key/value pair to $txt-colors to have _color-variant mixin produce
+ * the declaration blocks.
+ */
 ._txtDanger {
   color: #e74c3c;
 }
@@ -989,29 +1078,53 @@ a._txtWarning:hover {
   color: #f8b62a;
 }
 
+/**
+ * Word breaking
+ *
+ * Unbreakable words may be broken and wrap to next line.
+ */
 ._txtBreak {
   word-wrap: break-word;
 }
 
+/**
+ * Inherit parents text color.
+ */
 ._txtInheritColor {
   color: inherit;
 }
 
+/**
+ * Sizing treatments.
+ *
+ * Limit the amount of font-size delcarations.
+ *
+ * @resource:
+ * github.com/stubbornella/csslint/wiki/Don't-use-too-many-font-size-declarations
+ *
+ * 1. pixel fallback for IE.
+ */
 ._txtSmall {
   font-size: 10px;
+  /* 1 */
   font-size: 0.625rem;
 }
 
 ._txtMedium {
   font-size: 13px;
+  /* 1 */
   font-size: 0.8125rem;
 }
 
 ._txtLarge {
   font-size: 20px;
+  /* 1 */
   font-size: 1.25rem;
 }
 
+/**
+ * Transform treamtemnt.
+ */
 ._txtUpcase {
   text-transform: uppercase;
 }
@@ -1024,6 +1137,10 @@ a._txtWarning:hover {
   text-transform: capitalize;
 }
 
+/**
+ * Hide text visually but leave available for screenreaders: h5bp.com/v.
+ * @deprecated Has been moved to `./_layout.scss`.
+ */
 ._txtVisuallyHidden {
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
@@ -1034,6 +1151,9 @@ a._txtWarning:hover {
   width: 1px;
 }
 
+/**
+ * Collapse whitespace and suppress line breaks.
+ */
 ._txtNoWrap {
   white-space: nowrap;
 }
