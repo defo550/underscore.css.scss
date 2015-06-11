@@ -1,18 +1,28 @@
-// -----------------------------------------------------------------------------
-// Offsets
-// -----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
+   Offset helpers (compiled from scss/offsets.scss))
+   ------------------------------------------------------------------------- */
 
-// Adjust the amount of left or right whitespace of an element.
-// Percentage based offsets sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
-//
-// @require mixins/_sizing.scss
+/**
+ * Adjust the amount of left or right whitespace of an element.
+ * Percentage based offsets sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+ *
+ * @require mixins/_sizing.scss
+ */
 
-// Prepend: Add whitespace to left of element.
-// -----------------------------------------------------------------------------
+/* Prepend: Add whitespace to left of element.
+   ------------------------------------------------------------------------- */
 
-@include _size( '_prepend', 2 3 4 5 6 7 8 10 12, $property: margin-left, $important: false );
+@include _size( '_prepend',
+                2 3 4 5 6 7 8 10 12,
+                $property: margin-left,
+                $important: false
+              );
 
-// Append: Add whitespace to right of element
-// -----------------------------------------------------------------------------
+/* Append: Add whitespace to right of element
+   ------------------------------------------------------------------------- */
 
-@include _size( '_append', 2 3 4 5 6 7 8 10 12, $property: margin-right, $important: false );
+@include _size( '_append',
+                2 3 4 5 6 7 8 10 12,
+                $property: margin-right,
+                $important: false
+              );

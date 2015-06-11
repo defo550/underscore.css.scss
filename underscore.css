@@ -231,9 +231,17 @@
   /* 7 */
 }
 
-/* -----------------------------------------------------------------------------
-   Offsets: compiled from scss/offsets.scss
-   -------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+   Offset helpers (compiled from scss/offsets.scss))
+   ------------------------------------------------------------------------- */
+/**
+ * Adjust the amount of left or right whitespace of an element.
+ * Percentage based offsets sized by divisibles of 2, 4, 5, 6, 7, 8, 10, or 12.
+ *
+ * @require mixins/_sizing.scss
+ */
+/* Prepend: Add whitespace to left of element.
+   ------------------------------------------------------------------------- */
 ._prepend1of2, ._prepend2of4, ._prepend3of6, ._prepend4of8, ._prepend5of10, ._prepend6of12 {
   margin-left: 50%;
 }
@@ -350,6 +358,8 @@
   margin-left: 91.66667%;
 }
 
+/* Append: Add whitespace to right of element
+   ------------------------------------------------------------------------- */
 ._append1of2, ._append2of4, ._append3of6, ._append4of8, ._append5of10, ._append6of12 {
   margin-right: 50%;
 }
