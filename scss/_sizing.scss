@@ -6,21 +6,11 @@
    ------------------------------------------------------------------------- */
 
 /**
- * Shared styles.
- */
-
-%sharedStyles {
-  display: block !important;
-}
-
-/**
  * Wrap tightly an elements content.
  */
 
 ._sizeCompact,
 ._sizeCompactRight {
-  @extend %sharedStyles;
-
   width: auto !important;
 }
 
@@ -37,8 +27,6 @@
  */
 
 ._sizeOccupy {
-  @extend %sharedStyles;
-
   overflow: hidden !important;
 
   width: auto !important;
@@ -49,8 +37,6 @@
  */
 
 ._sizeFull {
-  @extend %sharedStyles;
-
   box-sizing: border-box !important;
   width: 100% !important;
 }
