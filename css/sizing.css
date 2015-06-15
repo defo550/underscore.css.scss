@@ -4,14 +4,6 @@
 /* Intrinsic sizes
    ------------------------------------------------------------------------- */
 /**
- * Shared styles.
- */
-._sizeCompact,
-._sizeCompactRight, ._sizeOccupy, ._sizeFull {
-  display: block !important;
-}
-
-/**
  * Wrap tightly an elements content.
  */
 ._sizeCompact,
