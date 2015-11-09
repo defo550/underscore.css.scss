@@ -3,9 +3,9 @@
 // ----------------------------------------------------------------------------
 
 @mixin _center-box {
-  display: block;
+  display: block !important;
   float: none !important;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

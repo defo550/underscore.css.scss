@@ -1,0 +1,14 @@
+// Display Manifest file.
+// To be included in sass:dev grunt task for compilation to css.
+
+// Functions
+@import '../functions/functions';
+
+// Mixins
+@import '../mixins/visuallyhidden';
+
+// Settings
+@import '../settings';
+
+// Layout
+@import '../display';

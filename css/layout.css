@@ -20,77 +20,24 @@
  *
  * @require mixins/_center-box.scss
  * @require mixins/_clearfix.scss
- * @rerquire mixins/_visuallyHidden.scss
  */
 /**
  * Center a box relative to its containg box.
  */
 ._centerBox {
-  display: block;
+  display: block !important;
   float: none !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /**
  * Clearfix: contain floats.
  */
 ._cf:after {
-  clear: both;
-  display: table;
-  content: "";
-}
-
-/**
- * Display
- * Adjust the default `display` type of a element.
- */
-._inline {
-  display: inline;
-}
-
-/**
- * 1. Address Firefox issue where images set to max-width 100%, break out of
- *    parent container, if parent container `display` property has a value of
- *    `inline-block.`
- */
-._inlineBlock {
-  display: inline-block;
-  max-width: 100%;
-  /* 1 */
-}
-
-._block {
-  display: block;
-}
-
-._hidden {
-  display: none;
-}
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- */
-._visuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  position: absolute;
-  border: 0;
-  height: 1px;
-  padding: 0;
-  width: 1px;
-}
-
-._table {
-  display: table;
-}
-
-._tableCell {
-  display: table-cell;
-}
-
-._tableRow {
-  display: table-row;
+  clear: both !important;
+  display: table !important;
+  content: "" !important;
 }
 
 /**
@@ -98,11 +45,11 @@
  * Position a box at the beginning or end of the current line.
  */
 ._pull {
-  float: left;
+  float: left !important;
 }
 
 ._push {
-  float: right;
+  float: right !important;
 }
 
 /**
@@ -113,5 +60,5 @@
  * nodes that are floated.
  */
 ._clipContent {
-  overflow: hidden;
+  overflow: hidden !important;
 }

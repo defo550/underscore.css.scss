@@ -1,0 +1,68 @@
+/* ----------------------------------------------------------------------------
+   Display helpers (compiled from /scss/display.scss)
+   ------------------------------------------------------------------------- */
+/**
+ * Display helpers.
+ *
+ * @require mixins/_visuallyHidden.scss
+ */
+._block {
+  display: block !important;
+}
+
+._flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+._inlineFlex {
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+._hidden {
+  display: none !important;
+}
+
+._inline {
+  display: inline !important;
+}
+
+/**
+ * 1. Address Firefox issue where images set to max-width 100%, break out of
+ *    parent container, if parent container `display` property has a value of
+ *    `inline-block.`
+ */
+._inlineBlock {
+  display: inline-block !important;
+  max-width: 100% !important;
+  /* 1 */
+}
+
+._table {
+  display: table !important;
+}
+
+._tableCell {
+  display: table-cell !important;
+}
+
+._tableRow {
+  display: table-row !important;
+}
+
+/**
+ * Hide text visually but leave available for screenreaders: h5bp.com/v.
+ */
+._visuallyHidden {
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  padding: 0 !important;
+  width: 1px !important;
+}

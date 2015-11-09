@@ -21,7 +21,6 @@
  *
  * @require mixins/_center-box.scss
  * @require mixins/_clearfix.scss
- * @rerquire mixins/_visuallyHidden.scss
  */
 
 /**
@@ -41,65 +40,16 @@
 }
 
 /**
- * Display
- * Adjust the default `display` type of a element.
- */
-
-._inline {
-  display: inline;
-}
-
-/**
- * 1. Address Firefox issue where images set to max-width 100%, break out of
- *    parent container, if parent container `display` property has a value of
- *    `inline-block.`
- */
-
-._inlineBlock {
-  display: inline-block;
-
-  max-width: 100%; /* 1 */
-}
-
-._block {
-  display: block;
-}
-
-._hidden {
-  display: none;
-}
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- */
-
-._visuallyHidden {
-  @include _visuallyHidden;
-}
-
-._table {
-  display: table;
-}
-
-._tableCell {
-  display: table-cell;
-}
-
-._tableRow {
-  display: table-row;
-}
-
-/**
  * Positioning Scheme: Floats
  * Position a box at the beginning or end of the current line.
  */
 
 ._pull {
-  float: left;
+  float: left !important;
 }
 
 ._push {
-  float: right;
+  float: right !important;
 }
 
 /**
@@ -111,5 +61,5 @@
  */
 
 ._clipContent {
-  overflow: hidden;
+  overflow: hidden !important;
 }

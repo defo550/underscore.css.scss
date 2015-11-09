@@ -35,38 +35,38 @@
  * Adjust text horizontally.
  */
 ._txtLeft {
-  text-align: left;
+  text-align: left !important;
 }
 
 ._txtCenter {
-  text-align: center;
+  text-align: center !important;
 }
 
 ._txtRight {
-  text-align: right;
+  text-align: right !important;
 }
 
 ._txtJustify {
-  text-align: justify;
+  text-align: justify !important;
 }
 
 /**
  * Ajust text vertically.
  */
 ._txtTop {
-  vertical-align: top;
+  vertical-align: top !important;
 }
 
 ._txtMiddle {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 ._txtBottom {
-  vertical-align: bottom;
+  vertical-align: bottom !important;
 }
 
 ._txtBaseline {
-  vertical-align: baseline;
+  vertical-align: baseline !important;
 }
 
 /**
@@ -76,12 +76,12 @@
  * multiple lines.
  */
 ._txtEllipsis {
-  display: block;
-  overflow: hidden;
-  max-width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
+  display: block !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
 }
 
 /**
@@ -92,35 +92,35 @@
  * the declaration blocks.
  */
 ._txtDanger {
-  color: #e74c3c;
+  color: #e74c3c !important;
 }
 
 a._txtDanger:hover {
-  color: #d62c1a;
+  color: #d62c1a !important;
 }
 
 ._txtGuide {
-  color: #3498db;
+  color: #3498db !important;
 }
 
 a._txtGuide:hover {
-  color: #217dbb;
+  color: #217dbb !important;
 }
 
 ._txtSuccess {
-  color: #2ecc71;
+  color: #2ecc71 !important;
 }
 
 a._txtSuccess:hover {
-  color: #25a25a;
+  color: #25a25a !important;
 }
 
 ._txtWarning {
-  color: #fac75b;
+  color: #fac75b !important;
 }
 
 a._txtWarning:hover {
-  color: #f8b62a;
+  color: #f8b62a !important;
 }
 
 /**
@@ -129,14 +129,14 @@ a._txtWarning:hover {
  * Unbreakable words may be broken and wrap to next line.
  */
 ._txtBreak {
-  word-wrap: break-word;
+  word-wrap: break-word !important;
 }
 
 /**
  * Inherit parents text color.
  */
 ._txtInheritColor {
-  color: inherit;
+  color: inherit !important;
 }
 
 /**
@@ -150,40 +150,40 @@ a._txtWarning:hover {
  * 1. pixel fallback for IE.
  */
 ._txtSmall {
-  font-size: 10px;
+  font-size: 10px !important;
   /* 1 */
-  font-size: 0.625rem;
+  font-size: 0.625rem !important;
 }
 
 ._txtMedium {
-  font-size: 13px;
+  font-size: 13px !important;
   /* 1 */
-  font-size: 0.8125rem;
+  font-size: 0.8125rem !important;
 }
 
 ._txtLarge {
-  font-size: 20px;
+  font-size: 20px !important;
   /* 1 */
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 /**
  * Transform treamtemnt.
  */
 ._txtJustify {
-  text-transform: justify;
+  text-transform: justify !important;
 }
 
 ._txtUpcase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 ._txtLowcase {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 ._txtCapitalize {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 /**
@@ -191,18 +191,18 @@ a._txtWarning:hover {
  * @deprecated Has been moved to `./_layout.scss`.
  */
 ._txtVisuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
   position: absolute !important;
-  border: 0;
-  height: 1px;
-  padding: 0;
-  width: 1px;
+  border: 0 !important;
+  height: 1px !important;
+  padding: 0 !important;
+  width: 1px !important;
 }
 
 /**
  * Collapse whitespace and suppress line breaks.
  */
 ._txtNoWrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }

@@ -10,12 +10,12 @@
 //    @resource: https://github.com/chriseppstein/compass/issues/941
 
 @mixin _text-ellipsis {
-  display: block; // 1
-  overflow: hidden;
+  display: block !important; // 1
+  overflow: hidden !important;
 
-  max-width: 100%; // 2
+  max-width: 100% !important; // 2
 
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal; // 3
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important; // 3
 }

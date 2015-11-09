@@ -13,8 +13,8 @@
  */
 
 ._imgFluid {
-  height: auto; /* 1 */
-  max-width: 100%; /* 2 */
+  height: auto !important; /* 1 */
+  max-width: 100% !important; /* 2 */
 }
 
 /**
@@ -22,5 +22,5 @@
  */
 
 ._imgCircle {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }

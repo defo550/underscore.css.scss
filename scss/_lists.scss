@@ -12,9 +12,9 @@
 
 ._listInline,
 ._listNoStyle {
-  padding: 0; /* 1 */
+  padding: 0 !important; /* 1 */
 
-  list-style: none;
+  list-style: none !important;
 }
 
 /**
@@ -32,19 +32,19 @@
  */
 
 ._listInline {
-  margin: 0; /* 1 */
+  margin: 0 !important; /* 1 */
 
-  font-size: 0; /* 2 */
+  font-size: 0 !important; /* 2 */
 }
 
 ._listInline > li {
-  display: inline-block; /* 3 */
+  display: inline-block !important; /* 3 */
 
   max-width: 100%; /* 4 */
   padding-left: _em( $base-spacing-medium );
   padding-right: _em( $base-spacing-medium );
 
-  font-size: 16px; /* 5 */
-  font-size: 1rem; /* 6 */
-  vertical-align: top; /* 7 */
+  font-size: 16px !important; /* 5 */
+  font-size: 1rem !important; /* 6 */
+  vertical-align: top !important; /* 7 */
 }

@@ -5,12 +5,12 @@
 // Hide text visually but leave available for screenreaders: h5bp.com/v.
 
 @mixin _visuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+  position: absolute !important;
 
-  border: 0;
-  height: 1px;
-  padding: 0;
-  width: 1px;
+  border: 0 !important;
+  height: 1px !important;
+  padding: 0 !important;
+  width: 1px !important;
 }

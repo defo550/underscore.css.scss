@@ -34,19 +34,19 @@
  * Adjust text horizontally.
  */
 
-._txtLeft    { text-align: left; }
-._txtCenter  { text-align: center; }
-._txtRight   { text-align: right; }
-._txtJustify { text-align: justify; }
+._txtLeft    { text-align: left !important; }
+._txtCenter  { text-align: center !important; }
+._txtRight   { text-align: right !important; }
+._txtJustify { text-align: justify !important; }
 
 /**
  * Ajust text vertically.
  */
 
-._txtTop      { vertical-align: top; }
-._txtMiddle   { vertical-align: middle; }
-._txtBottom   { vertical-align: bottom; }
-._txtBaseline { vertical-align: baseline; }
+._txtTop      { vertical-align: top !important; }
+._txtMiddle   { vertical-align: middle !important; }
+._txtBottom   { vertical-align: bottom !important; }
+._txtBaseline { vertical-align: baseline !important; }
 
 /**
  * Text Ellipsis
@@ -76,7 +76,7 @@
  */
 
 ._txtBreak {
-  word-wrap: break-word;
+  word-wrap: break-word !important;
 }
 
 /**
@@ -84,7 +84,7 @@
  */
 
 ._txtInheritColor {
-  color: inherit;
+  color: inherit !important;
 }
 
 /**
@@ -99,28 +99,28 @@
  */
 
 ._txtSmall  {
-  font-size: $txt-small; /* 1 */
-  font-size: _rem( $txt-small );
+  font-size: $txt-small !important; /* 1 */
+  font-size: _rem( $txt-small ) !important;
 }
 
 ._txtMedium {
-  font-size: $txt-medium; /* 1 */
-  font-size: _rem( $txt-medium );
+  font-size: $txt-medium !important; /* 1 */
+  font-size: _rem( $txt-medium ) !important;
 }
 
 ._txtLarge {
-  font-size: $txt-large; /* 1 */
-  font-size: _rem( $txt-large );
+  font-size: $txt-large !important; /* 1 */
+  font-size: _rem( $txt-large ) !important;
 }
 
 /**
  * Transform treamtemnt.
  */
 
-._txtJustify    { text-transform: justify; }
-._txtUpcase     { text-transform: uppercase; }
-._txtLowcase    { text-transform: lowercase; }
-._txtCapitalize { text-transform: capitalize; }
+._txtJustify    { text-transform: justify !important; }
+._txtUpcase     { text-transform: uppercase !important; }
+._txtLowcase    { text-transform: lowercase !important; }
+._txtCapitalize { text-transform: capitalize !important; }
 
 /**
  * Hide text visually but leave available for screenreaders: h5bp.com/v.
@@ -128,14 +128,14 @@
  */
 
 ._txtVisuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
   position: absolute !important;
 
-  border: 0;
-  height: 1px;
-  padding: 0;
-  width: 1px;
+  border: 0 !important;
+  height: 1px !important;
+  padding: 0 !important;
+  width: 1px !important;
 }
 
 /**
@@ -143,5 +143,5 @@
  */
 
 ._txtNoWrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
