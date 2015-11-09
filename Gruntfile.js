@@ -45,6 +45,7 @@ module.exports = function( grunt ) {
 
         files: {
           '<%= config.cssDir %>/images.css': '<%= config.convertDir %>/images.scss',
+          '<%= config.cssDir %>/display.css': '<%= config.convertDir %>/display.scss',
           '<%= config.cssDir %>/layout.css': '<%= config.convertDir %>/layout.scss',
           '<%= config.cssDir %>/links.css': '<%= config.convertDir %>/links.scss',
           '<%= config.cssDir %>/lists.css': '<%= config.convertDir %>/lists.scss',
