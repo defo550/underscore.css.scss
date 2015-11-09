@@ -25,19 +25,19 @@
  * Center a box relative to its containg box.
  */
 ._centerBox {
-  display: block;
+  display: block !important;
   float: none !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /**
  * Clearfix: contain floats.
  */
 ._cf:after {
-  clear: both;
-  display: table;
-  content: "";
+  clear: both !important;
+  display: table !important;
+  content: "" !important;
 }
 
 /**
@@ -45,11 +45,11 @@
  * Position a box at the beginning or end of the current line.
  */
 ._pull {
-  float: left;
+  float: left !important;
 }
 
 ._push {
-  float: right;
+  float: right !important;
 }
 
 /**
@@ -60,5 +60,5 @@
  * nodes that are floated.
  */
 ._clipContent {
-  overflow: hidden;
+  overflow: hidden !important;
 }

@@ -6,9 +6,9 @@
 
 @mixin _clearfix {
   &:after {
-    clear: both;
-    display: table;
+    clear: both !important;
+    display: table !important;
 
-    content: "";
+    content: "" !important;
   }
 }

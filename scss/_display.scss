@@ -9,23 +9,23 @@
  */
 
 ._block {
-  display: block;
+  display: block !important;
 }
 
 ._flex {
-  display: flex;
+  display: flex !important;
 }
 
 ._inlineFlex {
-  display: inline-flex;
+  display: inline-flex !important;
 }
 
 ._hidden {
-  display: none;
+  display: none !important;
 }
 
 ._inline {
-  display: inline;
+  display: inline !important;
 }
 
 /**
@@ -35,21 +35,21 @@
  */
 
 ._inlineBlock {
-  display: inline-block;
+  display: inline-block !important;
 
-  max-width: 100%; /* 1 */
+  max-width: 100% !important; /* 1 */
 }
 
 ._table {
-  display: table;
+  display: table !important;
 }
 
 ._tableCell {
-  display: table-cell;
+  display: table-cell !important;
 }
 
 ._tableRow {
-  display: table-row;
+  display: table-row !important;
 }
 
 /**

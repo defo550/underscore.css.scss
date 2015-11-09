@@ -45,11 +45,11 @@
  */
 
 ._pull {
-  float: left;
+  float: left !important;
 }
 
 ._push {
-  float: right;
+  float: right !important;
 }
 
 /**
@@ -61,5 +61,5 @@
  */
 
 ._clipContent {
-  overflow: hidden;
+  overflow: hidden !important;
 }
