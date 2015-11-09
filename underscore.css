@@ -1,8 +1,77 @@
 /**!
-* underscore.css.scss v2.7.0
+* underscore.css.scss v2.8.0
 * Copyright 2015 Christopher DeFelice
 * UnderscoreCSS may be freely distributed under the MIT license.
 */
+
+/* ----------------------------------------------------------------------------
+   Display helpers (compiled from /scss/display.scss)
+   ------------------------------------------------------------------------- */
+/**
+ * Display helpers.
+ *
+ * @require mixins/_visuallyHidden.scss
+ */
+._block {
+  display: block !important;
+}
+
+._flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+._inlineFlex {
+  display: -webkit-inline-flex !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+._hidden {
+  display: none !important;
+}
+
+._inline {
+  display: inline !important;
+}
+
+/**
+ * 1. Address Firefox issue where images set to max-width 100%, break out of
+ *    parent container, if parent container `display` property has a value of
+ *    `inline-block.`
+ */
+._inlineBlock {
+  display: inline-block !important;
+  max-width: 100% !important;
+  /* 1 */
+}
+
+._table {
+  display: table !important;
+}
+
+._tableCell {
+  display: table-cell !important;
+}
+
+._tableRow {
+  display: table-row !important;
+}
+
+/**
+ * Hide text visually but leave available for screenreaders: h5bp.com/v.
+ */
+._visuallyHidden {
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  padding: 0 !important;
+  width: 1px !important;
+}
 
 /* ----------------------------------------------------------------------------
    Image helpers (compiled from scss/images.scss)
@@ -17,9 +86,9 @@
  * 2. Set maximum width relative to its containing box.
  */
 ._imgFluid {
-  height: auto;
+  height: auto !important;
   /* 1 */
-  max-width: 100%;
+  max-width: 100% !important;
   /* 2 */
 }
 
@@ -27,7 +96,7 @@
  * Circular image.
  */
 ._imgCircle {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 
 /* ----------------------------------------------------------------------------
@@ -52,77 +121,24 @@
  *
  * @require mixins/_center-box.scss
  * @require mixins/_clearfix.scss
- * @rerquire mixins/_visuallyHidden.scss
  */
 /**
  * Center a box relative to its containg box.
  */
 ._centerBox {
-  display: block;
+  display: block !important;
   float: none !important;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /**
  * Clearfix: contain floats.
  */
 ._cf:after {
-  clear: both;
-  display: table;
-  content: "";
-}
-
-/**
- * Display
- * Adjust the default `display` type of a element.
- */
-._inline {
-  display: inline;
-}
-
-/**
- * 1. Address Firefox issue where images set to max-width 100%, break out of
- *    parent container, if parent container `display` property has a value of
- *    `inline-block.`
- */
-._inlineBlock {
-  display: inline-block;
-  max-width: 100%;
-  /* 1 */
-}
-
-._block {
-  display: block;
-}
-
-._hidden {
-  display: none;
-}
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- */
-._visuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
-  position: absolute;
-  border: 0;
-  height: 1px;
-  padding: 0;
-  width: 1px;
-}
-
-._table {
-  display: table;
-}
-
-._tableCell {
-  display: table-cell;
-}
-
-._tableRow {
-  display: table-row;
+  clear: both !important;
+  display: table !important;
+  content: "" !important;
 }
 
 /**
@@ -130,11 +146,11 @@
  * Position a box at the beginning or end of the current line.
  */
 ._pull {
-  float: left;
+  float: left !important;
 }
 
 ._push {
-  float: right;
+  float: right !important;
 }
 
 /**
@@ -145,7 +161,7 @@
  * nodes that are floated.
  */
 ._clipContent {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /* ----------------------------------------------------------------------------
@@ -191,9 +207,9 @@
  */
 ._listInline,
 ._listNoStyle {
-  padding: 0;
+  padding: 0 !important;
   /* 1 */
-  list-style: none;
+  list-style: none !important;
 }
 
 /**
@@ -210,24 +226,24 @@
  * 7. Provide consitent vertical alignment for `li` elements.
  */
 ._listInline {
-  margin: 0;
+  margin: 0 !important;
   /* 1 */
-  font-size: 0;
+  font-size: 0 !important;
   /* 2 */
 }
 
 ._listInline > li {
-  display: inline-block;
+  display: inline-block !important;
   /* 3 */
   max-width: 100%;
   /* 4 */
   padding-left: 0.75em;
   padding-right: 0.75em;
-  font-size: 16px;
+  font-size: 16px !important;
   /* 5 */
-  font-size: 1rem;
+  font-size: 1rem !important;
   /* 6 */
-  vertical-align: top;
+  vertical-align: top !important;
   /* 7 */
 }
 
@@ -243,237 +259,237 @@
 /* Prepend: Add whitespace to left of element.
    ------------------------------------------------------------------------- */
 ._prepend1of2, ._prepend2of4, ._prepend3of6, ._prepend4of8, ._prepend5of10, ._prepend6of12 {
-  margin-left: 50%;
+  margin-left: 50% !important;
 }
 
 ._prepend1of3, ._prepend2of6, ._prepend4of12 {
-  margin-left: 33.33333%;
+  margin-left: 33.33333% !important;
 }
 
 ._prepend2of3, ._prepend4of6, ._prepend8of12 {
-  margin-left: 66.66667%;
+  margin-left: 66.66667% !important;
 }
 
 ._prepend1of4, ._prepend2of8, ._prepend3of12 {
-  margin-left: 25%;
+  margin-left: 25% !important;
 }
 
 ._prepend3of4, ._prepend6of8, ._prepend9of12 {
-  margin-left: 75%;
+  margin-left: 75% !important;
 }
 
 ._prepend1of5, ._prepend2of10 {
-  margin-left: 20%;
+  margin-left: 20% !important;
 }
 
 ._prepend2of5, ._prepend4of10 {
-  margin-left: 40%;
+  margin-left: 40% !important;
 }
 
 ._prepend3of5, ._prepend6of10 {
-  margin-left: 60%;
+  margin-left: 60% !important;
 }
 
 ._prepend4of5, ._prepend8of10 {
-  margin-left: 80%;
+  margin-left: 80% !important;
 }
 
 ._prepend1of6, ._prepend2of12 {
-  margin-left: 16.66667%;
+  margin-left: 16.66667% !important;
 }
 
 ._prepend5of6, ._prepend10of12 {
-  margin-left: 83.33333%;
+  margin-left: 83.33333% !important;
 }
 
 ._prepend1of7 {
-  margin-left: 14.28571%;
+  margin-left: 14.28571% !important;
 }
 
 ._prepend2of7 {
-  margin-left: 28.57143%;
+  margin-left: 28.57143% !important;
 }
 
 ._prepend3of7 {
-  margin-left: 42.85714%;
+  margin-left: 42.85714% !important;
 }
 
 ._prepend4of7 {
-  margin-left: 57.14286%;
+  margin-left: 57.14286% !important;
 }
 
 ._prepend5of7 {
-  margin-left: 71.42857%;
+  margin-left: 71.42857% !important;
 }
 
 ._prepend6of7 {
-  margin-left: 85.71429%;
+  margin-left: 85.71429% !important;
 }
 
 ._prepend1of8 {
-  margin-left: 12.5%;
+  margin-left: 12.5% !important;
 }
 
 ._prepend3of8 {
-  margin-left: 37.5%;
+  margin-left: 37.5% !important;
 }
 
 ._prepend5of8 {
-  margin-left: 62.5%;
+  margin-left: 62.5% !important;
 }
 
 ._prepend7of8 {
-  margin-left: 87.5%;
+  margin-left: 87.5% !important;
 }
 
 ._prepend1of10 {
-  margin-left: 10%;
+  margin-left: 10% !important;
 }
 
 ._prepend3of10 {
-  margin-left: 30%;
+  margin-left: 30% !important;
 }
 
 ._prepend7of10 {
-  margin-left: 70%;
+  margin-left: 70% !important;
 }
 
 ._prepend9of10 {
-  margin-left: 90%;
+  margin-left: 90% !important;
 }
 
 ._prepend1of12 {
-  margin-left: 8.33333%;
+  margin-left: 8.33333% !important;
 }
 
 ._prepend5of12 {
-  margin-left: 41.66667%;
+  margin-left: 41.66667% !important;
 }
 
 ._prepend7of12 {
-  margin-left: 58.33333%;
+  margin-left: 58.33333% !important;
 }
 
 ._prepend11of12 {
-  margin-left: 91.66667%;
+  margin-left: 91.66667% !important;
 }
 
 /* Append: Add whitespace to right of element
    ------------------------------------------------------------------------- */
 ._append1of2, ._append2of4, ._append3of6, ._append4of8, ._append5of10, ._append6of12 {
-  margin-right: 50%;
+  margin-right: 50% !important;
 }
 
 ._append1of3, ._append2of6, ._append4of12 {
-  margin-right: 33.33333%;
+  margin-right: 33.33333% !important;
 }
 
 ._append2of3, ._append4of6, ._append8of12 {
-  margin-right: 66.66667%;
+  margin-right: 66.66667% !important;
 }
 
 ._append1of4, ._append2of8, ._append3of12 {
-  margin-right: 25%;
+  margin-right: 25% !important;
 }
 
 ._append3of4, ._append6of8, ._append9of12 {
-  margin-right: 75%;
+  margin-right: 75% !important;
 }
 
 ._append1of5, ._append2of10 {
-  margin-right: 20%;
+  margin-right: 20% !important;
 }
 
 ._append2of5, ._append4of10 {
-  margin-right: 40%;
+  margin-right: 40% !important;
 }
 
 ._append3of5, ._append6of10 {
-  margin-right: 60%;
+  margin-right: 60% !important;
 }
 
 ._append4of5, ._append8of10 {
-  margin-right: 80%;
+  margin-right: 80% !important;
 }
 
 ._append1of6, ._append2of12 {
-  margin-right: 16.66667%;
+  margin-right: 16.66667% !important;
 }
 
 ._append5of6, ._append10of12 {
-  margin-right: 83.33333%;
+  margin-right: 83.33333% !important;
 }
 
 ._append1of7 {
-  margin-right: 14.28571%;
+  margin-right: 14.28571% !important;
 }
 
 ._append2of7 {
-  margin-right: 28.57143%;
+  margin-right: 28.57143% !important;
 }
 
 ._append3of7 {
-  margin-right: 42.85714%;
+  margin-right: 42.85714% !important;
 }
 
 ._append4of7 {
-  margin-right: 57.14286%;
+  margin-right: 57.14286% !important;
 }
 
 ._append5of7 {
-  margin-right: 71.42857%;
+  margin-right: 71.42857% !important;
 }
 
 ._append6of7 {
-  margin-right: 85.71429%;
+  margin-right: 85.71429% !important;
 }
 
 ._append1of8 {
-  margin-right: 12.5%;
+  margin-right: 12.5% !important;
 }
 
 ._append3of8 {
-  margin-right: 37.5%;
+  margin-right: 37.5% !important;
 }
 
 ._append5of8 {
-  margin-right: 62.5%;
+  margin-right: 62.5% !important;
 }
 
 ._append7of8 {
-  margin-right: 87.5%;
+  margin-right: 87.5% !important;
 }
 
 ._append1of10 {
-  margin-right: 10%;
+  margin-right: 10% !important;
 }
 
 ._append3of10 {
-  margin-right: 30%;
+  margin-right: 30% !important;
 }
 
 ._append7of10 {
-  margin-right: 70%;
+  margin-right: 70% !important;
 }
 
 ._append9of10 {
-  margin-right: 90%;
+  margin-right: 90% !important;
 }
 
 ._append1of12 {
-  margin-right: 8.33333%;
+  margin-right: 8.33333% !important;
 }
 
 ._append5of12 {
-  margin-right: 41.66667%;
+  margin-right: 41.66667% !important;
 }
 
 ._append7of12 {
-  margin-right: 58.33333%;
+  margin-right: 58.33333% !important;
 }
 
 ._append11of12 {
-  margin-right: 91.66667%;
+  margin-right: 91.66667% !important;
 }
 
 /* ----------------------------------------------------------------------------
@@ -650,35 +666,35 @@
  * Background Emphasis.
  */
 ._bgDanger {
-  background-color: #e74c3c;
+  background-color: #e74c3c !important;
 }
 
 a._bgDanger:hover {
-  background-color: #d62c1a;
+  background-color: #d62c1a !important;
 }
 
 ._bgGuide {
-  background-color: #3498db;
+  background-color: #3498db !important;
 }
 
 a._bgGuide:hover {
-  background-color: #217dbb;
+  background-color: #217dbb !important;
 }
 
 ._bgSuccess {
-  background-color: #2ecc71;
+  background-color: #2ecc71 !important;
 }
 
 a._bgSuccess:hover {
-  background-color: #25a25a;
+  background-color: #25a25a !important;
 }
 
 ._bgWarning {
-  background-color: #fac75b;
+  background-color: #fac75b !important;
 }
 
 a._bgWarning:hover {
-  background-color: #f8b62a;
+  background-color: #f8b62a !important;
 }
 
 /* ----------------------------------------------------------------------------
@@ -982,38 +998,38 @@ a._bgWarning:hover {
  * Adjust text horizontally.
  */
 ._txtLeft {
-  text-align: left;
+  text-align: left !important;
 }
 
 ._txtCenter {
-  text-align: center;
+  text-align: center !important;
 }
 
 ._txtRight {
-  text-align: right;
+  text-align: right !important;
 }
 
 ._txtJustify {
-  text-align: justify;
+  text-align: justify !important;
 }
 
 /**
  * Ajust text vertically.
  */
 ._txtTop {
-  vertical-align: top;
+  vertical-align: top !important;
 }
 
 ._txtMiddle {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 ._txtBottom {
-  vertical-align: bottom;
+  vertical-align: bottom !important;
 }
 
 ._txtBaseline {
-  vertical-align: baseline;
+  vertical-align: baseline !important;
 }
 
 /**
@@ -1023,12 +1039,12 @@ a._bgWarning:hover {
  * multiple lines.
  */
 ._txtEllipsis {
-  display: block;
-  overflow: hidden;
-  max-width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
+  display: block !important;
+  overflow: hidden !important;
+  max-width: 100% !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
 }
 
 /**
@@ -1039,35 +1055,35 @@ a._bgWarning:hover {
  * the declaration blocks.
  */
 ._txtDanger {
-  color: #e74c3c;
+  color: #e74c3c !important;
 }
 
 a._txtDanger:hover {
-  color: #d62c1a;
+  color: #d62c1a !important;
 }
 
 ._txtGuide {
-  color: #3498db;
+  color: #3498db !important;
 }
 
 a._txtGuide:hover {
-  color: #217dbb;
+  color: #217dbb !important;
 }
 
 ._txtSuccess {
-  color: #2ecc71;
+  color: #2ecc71 !important;
 }
 
 a._txtSuccess:hover {
-  color: #25a25a;
+  color: #25a25a !important;
 }
 
 ._txtWarning {
-  color: #fac75b;
+  color: #fac75b !important;
 }
 
 a._txtWarning:hover {
-  color: #f8b62a;
+  color: #f8b62a !important;
 }
 
 /**
@@ -1076,14 +1092,14 @@ a._txtWarning:hover {
  * Unbreakable words may be broken and wrap to next line.
  */
 ._txtBreak {
-  word-wrap: break-word;
+  word-wrap: break-word !important;
 }
 
 /**
  * Inherit parents text color.
  */
 ._txtInheritColor {
-  color: inherit;
+  color: inherit !important;
 }
 
 /**
@@ -1097,40 +1113,40 @@ a._txtWarning:hover {
  * 1. pixel fallback for IE.
  */
 ._txtSmall {
-  font-size: 10px;
+  font-size: 10px !important;
   /* 1 */
-  font-size: 0.625rem;
+  font-size: 0.625rem !important;
 }
 
 ._txtMedium {
-  font-size: 13px;
+  font-size: 13px !important;
   /* 1 */
-  font-size: 0.8125rem;
+  font-size: 0.8125rem !important;
 }
 
 ._txtLarge {
-  font-size: 20px;
+  font-size: 20px !important;
   /* 1 */
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 /**
  * Transform treamtemnt.
  */
 ._txtJustify {
-  text-transform: justify;
+  text-transform: justify !important;
 }
 
 ._txtUpcase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 ._txtLowcase {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 ._txtCapitalize {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 /**
@@ -1138,18 +1154,18 @@ a._txtWarning:hover {
  * @deprecated Has been moved to `./_layout.scss`.
  */
 ._txtVisuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
   position: absolute !important;
-  border: 0;
-  height: 1px;
-  padding: 0;
-  width: 1px;
+  border: 0 !important;
+  height: 1px !important;
+  padding: 0 !important;
+  width: 1px !important;
 }
 
 /**
  * Collapse whitespace and suppress line breaks.
  */
 ._txtNoWrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
 }
