@@ -13,11 +13,13 @@
   @each $selector, $value in $list {
 
     .#{$selector} {
-      #{unquote($prop)}: $value;
+      #{unquote($prop)}: $value !important;
     }
 
     @if $anchor {
-      a.#{$selector}:hover { #{unquote($prop)}: darken($value, 10%); }
+      a.#{$selector}:hover {
+        #{unquote($prop)}: darken($value, 10%) !important;
+      }
     }
 
   }

@@ -11,9 +11,9 @@
  * 2. Set maximum width relative to its containing box.
  */
 ._imgFluid {
-  height: auto;
+  height: auto !important;
   /* 1 */
-  max-width: 100%;
+  max-width: 100% !important;
   /* 2 */
 }
 
@@ -21,5 +21,5 @@
  * Circular image.
  */
 ._imgCircle {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }

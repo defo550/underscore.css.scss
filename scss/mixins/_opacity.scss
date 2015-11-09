@@ -3,6 +3,6 @@
 // ----------------------------------------------------------------------------
 
 @mixin _opacity( $opacity: 100 ) {
-  opacity: $opacity / 100;
-  filter: alpha(opacity=$opacity);
+  opacity: $opacity / 100 !important;
+  filter: alpha(opacity=$opacity) !important;
 }
