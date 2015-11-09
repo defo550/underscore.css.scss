@@ -20,11 +20,7 @@ module.exports = function( grunt ) {
       convertDir: 'scss/convert-to-css'
     },
 
-    banner : '/**!\n' +
-             '* <%= pkg.name %> v<%= pkg.version %>\n' +
-             '* Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-             '* UnderscoreCSS may be freely distributed under the MIT license.\n' +
-             '*/',
+    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | MIT License | ' + '<%= pkg.repository.url %> */',
 
     watch: {
       scss: {
