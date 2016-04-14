@@ -77,6 +77,8 @@ Example:
   @import '../layout';
   ```
 
+**Deprecation warning** This directory will be removed in next major release.  Just directly import `.scss` files located in root of `scss` directory.
+
 ## Compiling Stylesheets
 
 Underscore.css.scss uses [Grunt](http://gruntjs.com/) for task management.
