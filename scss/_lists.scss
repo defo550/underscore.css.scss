@@ -3,6 +3,12 @@
    List helpers (compiled from scss/lists.scss)
    ------------------------------------------------------------------------- */
 
+// Dependencies
+
+@import 'functions/functions';
+
+@import 'settings';
+
 /**
  * Adjust the presentation and layout of list elements (i.e. `ul`, `ol`, `li`).
  * Strip all styles from a list element.

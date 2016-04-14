@@ -2,6 +2,11 @@
    Display helpers (compiled from /scss/display.scss)
    ------------------------------------------------------------------------- */
 
+// Dependencies
+
+@import 'mixins/visuallyhidden';
+@import 'settings';
+
 /**
  * Display helpers.
  *

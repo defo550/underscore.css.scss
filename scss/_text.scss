@@ -30,6 +30,15 @@
  *
  */
 
+// Dependencies
+
+@import 'functions/functions';
+
+@import 'mixins/_color-variant';
+@import 'mixins/_text-ellipsis';
+
+@import 'settings';
+
 /**
  * Adjust text horizontally.
  */

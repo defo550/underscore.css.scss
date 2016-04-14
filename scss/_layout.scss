@@ -23,6 +23,14 @@
  * @require mixins/_clearfix.scss
  */
 
+// Dependencies
+
+@import 'mixins/center-box';
+@import 'mixins/clearfix';
+@import 'mixins/visuallyhidden';
+
+@import 'settings';
+
 /**
  * Center a box relative to its containg box.
  */

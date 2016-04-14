@@ -8,6 +8,12 @@
  * @require mixins/_color-variant.scss
  */
 
+// Dependencies
+
+@import 'mixins/color-variant';
+
+@import 'settings';
+
 /**
  * Background Emphasis.
  */

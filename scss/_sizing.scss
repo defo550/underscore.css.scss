@@ -2,6 +2,12 @@
     Sizing helpers (compiled from /scss/sizing.scss)
    ------------------------------------------------------------------------- */
 
+// Dependencies
+
+@import 'mixins/sizing';
+
+@import 'settings';
+
 /* Intrinsic sizes
    ------------------------------------------------------------------------- */
 
