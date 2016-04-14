@@ -16,8 +16,7 @@ module.exports = function( grunt ) {
     config: {
       name: '<%= pkg.name.split(\'.\')[0] %>',
       cssDir: 'css',
-      scssDir: 'scss',
-      convertDir: 'scss/convert-to-css'
+      scssDir: 'scss'
     },
 
     banner: '/*! <%= pkg.name %> v<%= pkg.version %> | MIT License | ' + '<%= pkg.repository.url %> */',
@@ -40,16 +39,16 @@ module.exports = function( grunt ) {
         },
 
         files: {
-          '<%= config.cssDir %>/images.css': '<%= config.convertDir %>/images.scss',
-          '<%= config.cssDir %>/display.css': '<%= config.convertDir %>/display.scss',
-          '<%= config.cssDir %>/layout.css': '<%= config.convertDir %>/layout.scss',
-          '<%= config.cssDir %>/links.css': '<%= config.convertDir %>/links.scss',
-          '<%= config.cssDir %>/lists.css': '<%= config.convertDir %>/lists.scss',
-          '<%= config.cssDir %>/offsets.css': '<%= config.convertDir %>/offsets.scss',
-          '<%= config.cssDir %>/sizing.css': '<%= config.convertDir %>/sizing.scss',
-          '<%= config.cssDir %>/skins.css': '<%= config.convertDir %>/skins.scss',
-          '<%= config.cssDir %>/spacing.css': '<%= config.convertDir %>/spacing.scss',
-          '<%= config.cssDir %>/text.css': '<%= config.convertDir %>/text.scss'
+          '<%= config.cssDir %>/images.css': '<%= config.scssDir %>/images.scss',
+          '<%= config.cssDir %>/display.css': '<%= config.scssDir %>/display.scss',
+          '<%= config.cssDir %>/layout.css': '<%= config.scssDir %>/layout.scss',
+          '<%= config.cssDir %>/links.css': '<%= config.scssDir %>/links.scss',
+          '<%= config.cssDir %>/lists.css': '<%= config.scssDir %>/lists.scss',
+          '<%= config.cssDir %>/offsets.css': '<%= config.scssDir %>/offsets.scss',
+          '<%= config.cssDir %>/sizing.css': '<%= config.scssDir %>/sizing.scss',
+          '<%= config.cssDir %>/skins.css': '<%= config.scssDir %>/skins.scss',
+          '<%= config.cssDir %>/spacing.css': '<%= config.scssDir %>/spacing.scss',
+          '<%= config.cssDir %>/text.css': '<%= config.scssDir %>/text.scss'
         }
       }
     },
