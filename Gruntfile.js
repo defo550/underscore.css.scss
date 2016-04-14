@@ -39,16 +39,16 @@ module.exports = function( grunt ) {
         },
 
         files: {
-          '<%= config.cssDir %>/images.css': '<%= config.scssDir %>/images.scss',
-          '<%= config.cssDir %>/display.css': '<%= config.scssDir %>/display.scss',
-          '<%= config.cssDir %>/layout.css': '<%= config.scssDir %>/layout.scss',
-          '<%= config.cssDir %>/links.css': '<%= config.scssDir %>/links.scss',
-          '<%= config.cssDir %>/lists.css': '<%= config.scssDir %>/lists.scss',
-          '<%= config.cssDir %>/offsets.css': '<%= config.scssDir %>/offsets.scss',
-          '<%= config.cssDir %>/sizing.css': '<%= config.scssDir %>/sizing.scss',
-          '<%= config.cssDir %>/skins.css': '<%= config.scssDir %>/skins.scss',
-          '<%= config.cssDir %>/spacing.css': '<%= config.scssDir %>/spacing.scss',
-          '<%= config.cssDir %>/text.css': '<%= config.scssDir %>/text.scss'
+          '<%= config.cssDir %>/images.css': '<%= config.scssDir %>/_images.scss',
+          '<%= config.cssDir %>/display.css': '<%= config.scssDir %>/_display.scss',
+          '<%= config.cssDir %>/layout.css': '<%= config.scssDir %>/_layout.scss',
+          '<%= config.cssDir %>/links.css': '<%= config.scssDir %>/_links.scss',
+          '<%= config.cssDir %>/lists.css': '<%= config.scssDir %>/_lists.scss',
+          '<%= config.cssDir %>/offsets.css': '<%= config.scssDir %>/_offsets.scss',
+          '<%= config.cssDir %>/sizing.css': '<%= config.scssDir %>/_sizing.scss',
+          '<%= config.cssDir %>/skins.css': '<%= config.scssDir %>/_skins.scss',
+          '<%= config.cssDir %>/spacing.css': '<%= config.scssDir %>/_spacing.scss',
+          '<%= config.cssDir %>/text.css': '<%= config.scssDir %>/_text.scss'
         }
       }
     },
