@@ -1,6 +1,5 @@
 {
   "name": "underscore.css.scss",
-  "private": true,
   "version": "2.9.0",
   "description": "CSS and SASS helper library.",
   "keywords": [
@@ -10,6 +9,8 @@
     "html",
     "browser"
   ],
+  "main": "underscore.css",
+  "style": "underscore.css",
   "author": "Christopher DeFelice",
   "repository": {
     "type": "git",
