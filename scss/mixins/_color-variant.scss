@@ -2,26 +2,36 @@
 // Mixin: Color variant
 // ----------------------------------------------------------------------------
 
-// Add a key/value list to generate color emphasis styles.
+// Create a ruleset based on a passed in color.  Perfect for creating alternate
+// anchor skins with a color variant on hover/focus.
 //
-// @param {()} $list - key/value pair list.
-// @param {string} $prop=color - CSS property to add value to.
-// @param {boolean} $anchor=true - Create a<key>:hover selector.
+// @param {string} $selector - CSS selector.
+// @param {string} $prop - CSS property to add color value to.
+// @param {boolean} $anchor - Create anchore hover/focus ruleset.
 
-@mixin _color-variant( $list, $prop: color, $anchor: true ) {
-
-  @each $selector, $value in $list {
-
-    .#{$selector} {
-      #{unquote($prop)}: $value !important;
-    }
-
-    @if $anchor {
-      a.#{$selector}:hover {
-        #{unquote($prop)}: mix(#000, $value, 10%) !important;
-      }
-    }
-
+@mixin _color-variant($selector, $color, $prop: color, $anchor: true) {
+  .#{unquote($selector)} {
+    #{unquote($prop)}: $color !important;
   }
 
+  @if $anchor {
+    a.#{$selector} {
+      &:hover,
+      &:focus {
+        #{unquote($prop)}: mix(#000, $color, 10%) !important;
+      }
+    }
+  }
+}
+
+// Create color variant rulesets from a list.
+//
+// @param {list} $list - SASS list of selector: color pairs.
+// @param {string} $prop - CSS property to add color value to.
+// @param {boolean} $anchor - Create anchore hover/focus ruleset.
+
+@mixin _color-variants($list, $prop: color, $anchor: true) {
+  @each $selector, $color in $list {
+    @include _color-variant($selector, $color, $prop, $anchor);
+  }
 }
