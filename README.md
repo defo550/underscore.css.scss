@@ -86,12 +86,18 @@ Underscore.css.scss uses [Grunt](http://gruntjs.com/) for task management.
 From a command shell and at root of project:
 
   ```
+  npm run build
+
+  // Deprecated
   grunt build-css
   ```
 
 If you want to generate `css` on updates to the main `scss` files:
 
   ```
+  npm run watch
+
+  // Depreacted
   grunt listen-scss
   ```
 

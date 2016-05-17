@@ -21,7 +21,9 @@
   },
   "scripts": {
     "build-css": "grunt build-css",
-    "listen-scss": "grunt listen-scss"
+    "listen-scss": "grunt listen-scss",
+    "watch": "grunt listen-scss",
+    "build": "grunt build-css"
   },
   "devDependencies": {
     "csslint": "~0.10.0",
