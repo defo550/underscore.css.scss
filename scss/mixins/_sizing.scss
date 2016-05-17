@@ -13,12 +13,12 @@
 // @include size( '_size', 2 4 );
 //
 // @param {string} $prefix - create selector name.
-// @param {(integers)} $size-units - Space separated list of integers.
-// @param {string} $property=width - Property to add dimensions to.
-// @param {string} $suffix= - Add a modifier, etc.
+// @param {map} $size-units - Space separated list of integers.
+// @param {string} $property [width] - Property to add dimensions to.
+// @param {string} $suffix [''] - Add a modifier, etc.
 // @param {boolean} $important - Add '!important' to your sizing declarations.
 
-@mixin _size( $prefix, $size-units, $property: width, $suffix: '', $important: true ) {
+@mixin _size($prefix, $size-units, $property: width, $suffix: '', $important: true) {
 
   @each $var in  $size-units {
 
@@ -40,4 +40,50 @@
     }
   }
 
+}
+
+// Build out compact sizing selectors.
+//
+// @param {string} $modifier [''] - set a modifier for class.
+// @param {boolean} $important [true] - set declaration block to important.
+
+@mixin _size-compact($modifier: '', $important: true) {
+  ._sizeCompact#{$modifier},
+  ._sizeCompactRight#{$modifier} {
+    width: auto if($important, !important, '');
+  }
+
+  ._sizeCompact#{$modifier} {
+    float: left if($important, !important, '');
+  }
+
+  ._sizeCompactRight#{$modifier} {
+    float: right if($important, !important, '');
+  }
+}
+
+// Build out occupy sizing selectors.
+//
+// @param {string} $modifier [''] - set a modifier for class.
+// @param {boolean} $important [true] - set declaration block to important.
+
+@mixin _size-occupy($modifier: '', $important: true) {
+  ._sizeOccupy#{$modifier} {
+    overflow: hidden if($important, !important, '');
+
+    width: auto if($important, !important, '');
+  }
+}
+
+
+// Build out full sizing selectors.
+//
+// @param {string} $modifier [''] - set a modifier for class.
+// @param {boolean} $important [true] - set declaration block to important.
+
+@mixin _size-full($modifier: '', $important: true) {
+  ._sizeFull {
+    box-sizing: border-box if($important, !important, '');
+    width: 100% if($important, !important, '');
+  }
 }

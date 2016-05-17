@@ -1,11 +1,10 @@
 /* ----------------------------------------------------------------------------
-    Sizing helpers (compiled from /scss/sizing.scss)
+    Sizing helpers
    ------------------------------------------------------------------------- */
 
 // Dependencies
-
+@import 'functions/gcd';
 @import 'mixins/sizing';
-
 @import 'settings';
 
 /* Intrinsic sizes
@@ -15,37 +14,19 @@
  * Wrap tightly an elements content.
  */
 
-._sizeCompact,
-._sizeCompactRight {
-  width: auto !important;
-}
-
-._sizeCompact {
-  float: left !important;
-}
-
-._sizeCompactRight {
-  float: right !important;
-}
+@include _size-compact();
 
 /**
  * Element occupies all available space.
  */
 
-._sizeOccupy {
-  overflow: hidden !important;
-
-  width: auto !important;
-}
+@include _size-occupy();
 
 /**
  * Element fills entire space of parent.
  */
 
-._sizeFull {
-  box-sizing: border-box !important;
-  width: 100% !important;
-}
+@include _size-full();
 
 /* Proportionate sizes
    ------------------------------------------------------------------------- */
@@ -57,4 +38,4 @@
  * @require mixins/_sizing.scss
  */
 
-@include _size( "_size", 2 3 4 5 6 7 8 10 12, $important: true );
+@include _size("_size", 2 3 4 5 6 7 8 10 12, $important: true);
