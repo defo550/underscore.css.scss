@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-   Spacing helpers (compiled from scss/spacing.scss)
+   Spacing helpers
    ------------------------------------------------------------------------- */
 /**
  * Adjust the whitespace and padding around an element.
@@ -31,223 +31,164 @@
  */
 /* Padding helpers
    ------------------------------------------------------------------------- */
-._ptn,
-._pvn,
-._pan {
+._pan, ._ptn, ._pvn {
   padding-top: 0 !important;
+  padding-top: 0rem !important;
 }
 
-._pts,
-._pvs,
-._pas {
+._pan, ._prn, ._phn {
+  padding-right: 0 !important;
+  padding-right: 0rem !important;
+}
+
+._pan, ._pbn, ._pvn {
+  padding-bottom: 0 !important;
+  padding-bottom: 0rem !important;
+}
+
+._pan, ._pln, ._phn {
+  padding-left: 0 !important;
+  padding-left: 0rem !important;
+}
+
+._pas, ._pts, ._pvs {
   padding-top: 6px !important;
   padding-top: 0.375rem !important;
 }
 
-._ptm,
-._pvm,
-._pam {
-  padding-top: 12px !important;
-  padding-top: 0.75rem !important;
-}
-
-._ptl,
-._pvl,
-._pal {
-  padding-top: 24px !important;
-  padding-top: 1.5rem !important;
-}
-
-._prn,
-._phn,
-._pan {
-  padding-right: 0 !important;
-}
-
-._prs,
-._phs,
-._pas {
+._pas, ._prs, ._phs {
   padding-right: 6px !important;
   padding-right: 0.375rem !important;
 }
 
-._prm,
-._phm,
-._pam {
-  padding-right: 12px !important;
-  padding-right: 0.75rem !important;
-}
-
-._prl,
-._phl,
-._pal {
-  padding-right: 24px !important;
-  padding-right: 1.5rem !important;
-}
-
-._pbn,
-._pvn,
-._pan {
-  padding-bottom: 0 !important;
-}
-
-._pbs,
-._pvs,
-._pas {
+._pas, ._pbs, ._pvs {
   padding-bottom: 6px !important;
   padding-bottom: 0.375rem !important;
 }
 
-._pbm,
-._pvm,
-._pam {
-  padding-bottom: 12px !important;
-  padding-bottom: 0.75rem !important;
-}
-
-._pbl,
-._pvl,
-._pal {
-  padding-bottom: 24px !important;
-  padding-bottom: 1.5rem !important;
-}
-
-._pln,
-._phn,
-._pan {
-  padding-left: 0 !important;
-}
-
-._pls,
-._phs,
-._pas {
+._pas, ._pls, ._phs {
   padding-left: 6px !important;
   padding-left: 0.375rem !important;
 }
 
-._plm,
-._phm,
-._pam {
+._pam, ._ptm, ._pvm {
+  padding-top: 12px !important;
+  padding-top: 0.75rem !important;
+}
+
+._pam, ._prm, ._phm {
+  padding-right: 12px !important;
+  padding-right: 0.75rem !important;
+}
+
+._pam, ._pbm, ._pvm {
+  padding-bottom: 12px !important;
+  padding-bottom: 0.75rem !important;
+}
+
+._pam, ._plm, ._phm {
   padding-left: 12px !important;
   padding-left: 0.75rem !important;
 }
 
-._pll,
-._phl,
-._pal {
+._pal, ._ptl, ._pvl {
+  padding-top: 24px !important;
+  padding-top: 1.5rem !important;
+}
+
+._pal, ._prl, ._phl {
+  padding-right: 24px !important;
+  padding-right: 1.5rem !important;
+}
+
+._pal, ._pbl, ._pvl {
+  padding-bottom: 24px !important;
+  padding-bottom: 1.5rem !important;
+}
+
+._pal, ._pll, ._phl {
   padding-left: 24px !important;
   padding-left: 1.5rem !important;
 }
 
 /* Margin helpers
    ------------------------------------------------------------------------- */
-._mtn,
-._mvn,
-._man,
-._mrn,
-._mhn,
-._man {
+._man, ._mtn, ._mvn {
   margin-top: 0 !important;
+  margin-top: 0rem !important;
 }
 
-._mts,
-._mvs,
-._mas {
+._man, ._mrn, ._mhn {
+  margin-right: 0 !important;
+  margin-right: 0rem !important;
+}
+
+._man, ._mbn, ._mvn {
+  margin-bottom: 0 !important;
+  margin-bottom: 0rem !important;
+}
+
+._man, ._mln, ._mhn {
+  margin-left: 0 !important;
+  margin-left: 0rem !important;
+}
+
+._mas, ._mts, ._mvs {
   margin-top: 6px !important;
   margin-top: 0.375rem !important;
 }
 
-._mtm,
-._mvm,
-._mam {
-  margin-top: 12px !important;
-  margin-top: 0.75rem !important;
-}
-
-._mtl,
-._mvl,
-._mal {
-  margin-top: 24px !important;
-  margin-top: 1.5rem !important;
-}
-
-._mrn,
-._mhn,
-._man {
-  margin-right: 0 !important;
-}
-
-._mrs,
-._mhs,
-._mas {
+._mas, ._mrs, ._mhs {
   margin-right: 6px !important;
   margin-right: 0.375rem !important;
 }
 
-._mrm,
-._mhm,
-._mam {
-  margin-right: 12px !important;
-  margin-right: 0.75rem !important;
-}
-
-._mrl,
-._mhl,
-._mal {
-  margin-right: 24px !important;
-  margin-right: 1.5rem !important;
-}
-
-._mbn,
-._mvn,
-._man {
-  margin-bottom: 0 !important;
-}
-
-._mbs,
-._mvs,
-._mas {
+._mas, ._mbs, ._mvs {
   margin-bottom: 6px !important;
   margin-bottom: 0.375rem !important;
 }
 
-._mbm,
-._mvm,
-._mam {
-  margin-bottom: 12px !important;
-  margin-bottom: 0.75rem !important;
-}
-
-._mbl,
-._mvl,
-._mal {
-  margin-bottom: 24px !important;
-  margin-bottom: 1.5rem !important;
-}
-
-._mln,
-._mhn,
-._man {
-  margin-left: 0 !important;
-}
-
-._mls,
-._mhs,
-._mas {
+._mas, ._mls, ._mhs {
   margin-left: 6px !important;
   margin-left: 0.375rem !important;
 }
 
-._mlm,
-._mhm,
-._mam {
+._mam, ._mtm, ._mvm {
+  margin-top: 12px !important;
+  margin-top: 0.75rem !important;
+}
+
+._mam, ._mrm, ._mhm {
+  margin-right: 12px !important;
+  margin-right: 0.75rem !important;
+}
+
+._mam, ._mbm, ._mvm {
+  margin-bottom: 12px !important;
+  margin-bottom: 0.75rem !important;
+}
+
+._mam, ._mlm, ._mhm {
   margin-left: 12px !important;
   margin-left: 0.75rem !important;
 }
 
-._mll,
-._mhl,
-._mal {
+._mal, ._mtl, ._mvl {
+  margin-top: 24px !important;
+  margin-top: 1.5rem !important;
+}
+
+._mal, ._mrl, ._mhl {
+  margin-right: 24px !important;
+  margin-right: 1.5rem !important;
+}
+
+._mal, ._mbl, ._mvl {
+  margin-bottom: 24px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+._mal, ._mll, ._mhl {
   margin-left: 24px !important;
   margin-left: 1.5rem !important;
 }

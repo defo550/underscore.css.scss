@@ -1,8 +1,5 @@
-/* -----------------------------------------------------------------------------
-   Text : compiled from scss/text.scss
-   -------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------
-   Text helpers (compiled from scss/text.scss)
+   Text helpers
    ------------------------------------------------------------------------- */
 /**
  * Adjust the textual structure of a element.
@@ -34,38 +31,38 @@
 /**
  * Adjust text horizontally.
  */
-._txtLeft {
+._textLeft {
   text-align: left !important;
 }
 
-._txtCenter {
+._textCenter {
   text-align: center !important;
 }
 
-._txtRight {
+._textRight {
   text-align: right !important;
 }
 
-._txtJustify {
+._textJustify {
   text-align: justify !important;
 }
 
 /**
  * Ajust text vertically.
  */
-._txtTop {
+._textTop {
   vertical-align: top !important;
 }
 
-._txtMiddle {
+._textMiddle {
   vertical-align: middle !important;
 }
 
-._txtBottom {
+._textBottom {
   vertical-align: bottom !important;
 }
 
-._txtBaseline {
+._textBaseline {
   vertical-align: baseline !important;
 }
 
@@ -75,7 +72,7 @@
  * Add an ellipsis '...' to text that is prevented from wrapping onto
  * multiple lines.
  */
-._txtEllipsis {
+._textEllipsis {
   display: block !important;
   overflow: hidden !important;
   max-width: 100% !important;
@@ -85,57 +82,18 @@
 }
 
 /**
- * Text importance.
- * <selector>: <color>
- *
- * Append key/value pair to $txt-colors to have _color-variant mixin produce
- * the declaration blocks.
- */
-._txtDanger {
-  color: #e74c3c !important;
-}
-
-a._txtDanger:hover {
-  color: #d62c1a !important;
-}
-
-._txtGuide {
-  color: #3498db !important;
-}
-
-a._txtGuide:hover {
-  color: #217dbb !important;
-}
-
-._txtSuccess {
-  color: #2ecc71 !important;
-}
-
-a._txtSuccess:hover {
-  color: #25a25a !important;
-}
-
-._txtWarning {
-  color: #fac75b !important;
-}
-
-a._txtWarning:hover {
-  color: #f8b62a !important;
-}
-
-/**
  * Word breaking
  *
  * Unbreakable words may be broken and wrap to next line.
  */
-._txtBreak {
+._textBreak {
   word-wrap: break-word !important;
 }
 
 /**
  * Inherit parents text color.
  */
-._txtInheritColor {
+._textInheritColor {
   color: inherit !important;
 }
 
@@ -149,19 +107,19 @@ a._txtWarning:hover {
  *
  * 1. pixel fallback for IE.
  */
-._txtSmall {
+._textSmall {
   font-size: 10px !important;
   /* 1 */
   font-size: 0.625rem !important;
 }
 
-._txtMedium {
+._textMedium {
   font-size: 13px !important;
   /* 1 */
   font-size: 0.8125rem !important;
 }
 
-._txtLarge {
+._textLarge {
   font-size: 20px !important;
   /* 1 */
   font-size: 1.25rem !important;
@@ -170,39 +128,25 @@ a._txtWarning:hover {
 /**
  * Transform treamtemnt.
  */
-._txtJustify {
+._textJustify {
   text-transform: justify !important;
 }
 
-._txtUpcase {
+._textUpcase {
   text-transform: uppercase !important;
 }
 
-._txtLowcase {
+._textLowcase {
   text-transform: lowercase !important;
 }
 
-._txtCapitalize {
+._textCapitalize {
   text-transform: capitalize !important;
-}
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- * @deprecated Has been moved to `./_layout.scss`.
- */
-._txtVisuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  padding: 0 !important;
-  width: 1px !important;
 }
 
 /**
  * Collapse whitespace and suppress line breaks.
  */
-._txtNoWrap {
+._textNoWrap {
   white-space: nowrap !important;
 }

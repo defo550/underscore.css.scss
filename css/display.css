@@ -1,11 +1,6 @@
 /* ----------------------------------------------------------------------------
-   Display helpers (compiled from /scss/display.scss)
+   Display helpers
    ------------------------------------------------------------------------- */
-/**
- * Display helpers.
- *
- * @require mixins/_visuallyHidden.scss
- */
 ._block {
   display: block !important;
 }
@@ -15,12 +10,6 @@
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
-}
-
-._inlineFlex {
-  display: -webkit-inline-flex !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
 }
 
 ._hidden {
