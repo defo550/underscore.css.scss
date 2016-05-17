@@ -1,0 +1,95 @@
+// ----------------------------------------------------------------------------
+// Mixins: spacing
+// ----------------------------------------------------------------------------
+
+// Dependencies
+@import "../functions/rem";
+
+// Create spacing rulesets.
+//
+// Legend:
+// _<type><direction><size>
+//
+// Type:
+// Is the map passed in.  e.g. $map: (margin: m), type will be 'm'.
+//
+// Direction:
+// a = all
+// b = bottom
+// h = horizontal
+// l = left
+// r = right
+// t = top
+// v = vertical
+//
+// Size:
+// l = large
+// m = medium
+// n = none
+// s = small
+// a = auto
+//
+// @require {function} _rem
+// @param {map} $map - Single key/value pair indicating property and abbr.
+// @param {map} $spacings - key/value pairs of 'size' and length.
+// @param {string} $modifier [''] - Add modifier to selector.
+// @example
+//    $spacings: (
+//      n: 0,
+//      s: $spacing-small,
+//      m: $spacing-medium,
+//      l: $spacing-base
+//    ) !default;
+//    @include _spacing((padding: p), $spacings);
+//    @include _spacing((margin: m), $spacings);
+
+
+@mixin _spacing($map, $spacings, $modifier: '') {
+  @each $prop, $abbr in $map {
+    @each $size, $length in $spacings {
+      %#{$abbr}#{$size}-top {
+        #{$prop}-top: $length !important;
+        #{$prop}-top: _rem($length) !important;
+      }
+
+      %#{$abbr}#{$size}-right {
+        #{$prop}-right: $length !important;
+        #{$prop}-right: _rem($length) !important;
+      }
+
+      %#{$abbr}#{$size}-bottom {
+        #{$prop}-bottom: $length !important;
+        #{$prop}-bottom: _rem($length) !important;
+      }
+
+      %#{$abbr}#{$size}-left {
+        #{$prop}-left: $length !important;
+        #{$prop}-left: _rem($length) !important;
+      }
+
+      ._#{$abbr}a#{$size}#{$modifier} {
+        @extend %#{$abbr}#{$size}-bottom;
+        @extend %#{$abbr}#{$size}-left;
+        @extend %#{$abbr}#{$size}-right;
+        @extend %#{$abbr}#{$size}-top;
+      }
+
+      ._#{$abbr}t#{$size}#{$modifier} { @extend %#{$abbr}#{$size}-top; }
+      ._#{$abbr}r#{$size}#{$modifier} { @extend %#{$abbr}#{$size}-right; }
+      ._#{$abbr}b#{$size}#{$modifier} { @extend %#{$abbr}#{$size}-bottom; }
+      ._#{$abbr}l#{$size}#{$modifier} { @extend %#{$abbr}#{$size}-left; }
+
+      // Horizontal spacing.
+      ._#{$abbr}h#{$size}#{$modifier} {
+        @extend %#{$abbr}#{$size}-left;
+        @extend %#{$abbr}#{$size}-right;
+      }
+
+      // Vertical spacing.
+      ._#{$abbr}v#{$size}#{$modifier} {
+        @extend %#{$abbr}#{$size}-bottom;
+        @extend %#{$abbr}#{$size}-top;
+      }
+    }
+  }
+}
