@@ -39,19 +39,19 @@
  * Adjust text horizontally.
  */
 
-._txtLeft    { text-align: left !important; }
-._txtCenter  { text-align: center !important; }
-._txtRight   { text-align: right !important; }
-._txtJustify { text-align: justify !important; }
+._textLeft    { text-align: left !important; }
+._textCenter  { text-align: center !important; }
+._textRight   { text-align: right !important; }
+._textJustify { text-align: justify !important; }
 
 /**
  * Ajust text vertically.
  */
 
-._txtTop      { vertical-align: top !important; }
-._txtMiddle   { vertical-align: middle !important; }
-._txtBottom   { vertical-align: bottom !important; }
-._txtBaseline { vertical-align: baseline !important; }
+._textTop      { vertical-align: top !important; }
+._textMiddle   { vertical-align: middle !important; }
+._textBottom   { vertical-align: bottom !important; }
+._textBaseline { vertical-align: baseline !important; }
 
 /**
  * Text Ellipsis
@@ -60,7 +60,7 @@
  * multiple lines.
  */
 
-._txtEllipsis {
+._textEllipsis {
   @include _text-ellipsis;
 }
 
@@ -70,7 +70,7 @@
  * Unbreakable words may be broken and wrap to next line.
  */
 
-._txtBreak {
+._textBreak {
   word-wrap: break-word !important;
 }
 
@@ -78,7 +78,7 @@
  * Inherit parents text color.
  */
 
-._txtInheritColor {
+._textInheritColor {
   color: inherit !important;
 }
 
@@ -93,34 +93,34 @@
  * 1. pixel fallback for IE.
  */
 
-._txtSmall  {
-  font-size: $txt-small !important; /* 1 */
-  font-size: _rem( $txt-small ) !important;
+._textSmall  {
+  font-size: $text-small !important; /* 1 */
+  font-size: _rem( $text-small ) !important;
 }
 
-._txtMedium {
-  font-size: $txt-medium !important; /* 1 */
-  font-size: _rem( $txt-medium ) !important;
+._textMedium {
+  font-size: $text-medium !important; /* 1 */
+  font-size: _rem( $text-medium ) !important;
 }
 
-._txtLarge {
-  font-size: $txt-large !important; /* 1 */
-  font-size: _rem( $txt-large ) !important;
+._textLarge {
+  font-size: $text-large !important; /* 1 */
+  font-size: _rem( $text-large ) !important;
 }
 
 /**
  * Transform treamtemnt.
  */
 
-._txtJustify    { text-transform: justify !important; }
-._txtUpcase     { text-transform: uppercase !important; }
-._txtLowcase    { text-transform: lowercase !important; }
-._txtCapitalize { text-transform: capitalize !important; }
+._textJustify    { text-transform: justify !important; }
+._textUpcase     { text-transform: uppercase !important; }
+._textLowcase    { text-transform: lowercase !important; }
+._textCapitalize { text-transform: capitalize !important; }
 
 /**
  * Collapse whitespace and suppress line breaks.
  */
 
-._txtNoWrap {
+._textNoWrap {
   white-space: nowrap !important;
 }

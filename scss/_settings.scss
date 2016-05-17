@@ -29,6 +29,6 @@ $spacings: (
 // ----------------------------------------------------------------------------
 
 // Sizing variables
-$txt-small:  floor( _ms( $type-font-size, -2, 1.25 ) ) !default; // 10px
-$txt-medium: ceil( _ms( $type-font-size, -1, 1.25 ) ) !default; // 13px
-$txt-large:  _ms( $type-font-size, 1, 1.25 ) !default; // 20px
+$text-small:  floor( _ms( $type-font-size, -2, 1.25 ) ) !default; // 10px
+$text-medium: ceil( _ms( $type-font-size, -1, 1.25 ) ) !default; // 13px
+$text-large:  _ms( $type-font-size, 1, 1.25 ) !default; // 20px
