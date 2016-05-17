@@ -56,27 +56,6 @@ Full list of `scss` files:
 
 The `/scss/mixins`, `/scss/functions`, and `/scss/addons` directories contains some useful helper mixins and functions.
 
-#### convert-to-css
-
-The `/scss/convert-to-css` contains manifest files for each of the inividual `.scss` located in `/scss` directory.  The purpose of these files are for the compilation of the `.css` files that are in `/css` directory.  Each manifest file will conatin the appropriate dependencies (i.e. imports) that is specific to that helper file.
-
-Example:
-
-  ```css
-  // Layout Manifest file.
-  // To be included in sass:dev grunt task for compilation to css.
-
-  // Mixins
-  @import '../mixins/center-box';
-  @import '../mixins/clearfix';
-
-  // Settings
-  @import '../settings';
-
-  // Layout
-  @import '../layout';
-  ```
-
 ## Compiling Stylesheets
 
 Underscore.css.scss uses [Grunt](http://gruntjs.com/) for task management.
@@ -87,18 +66,12 @@ From a command shell and at root of project:
 
   ```
   npm run build
-
-  // Deprecated
-  grunt build-css
   ```
 
 If you want to generate `css` on updates to the main `scss` files:
 
   ```
   npm run watch
-
-  // Depreacted
-  grunt listen-scss
   ```
 
 Underscore.css.scss also uses the [grunt-autoprefixer](https://github.com/nDmitry/grunt-autoprefixer) plugin.  Running either command above will parse the CSS and add the appropriate vendor-prefixes using the [Can I use](http://caniuse.com/) database.
