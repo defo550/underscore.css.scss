@@ -20,8 +20,7 @@
 
 @include _size( '_prepend',
                 2 3 4 5 6 7 8 10 12,
-                $property: margin-left,
-                $important: true
+                $property: margin-left
               );
 
 /* Append: Add whitespace to right of element
@@ -29,6 +28,5 @@
 
 @include _size( '_append',
                 2 3 4 5 6 7 8 10 12,
-                $property: margin-right,
-                $important: true
+                $property: margin-right
               );
