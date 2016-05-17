@@ -4,12 +4,7 @@
 
 // Dependencies
 @import 'settings';
-
-/**
- * Display helpers.
- *
- * @require mixins/_visuallyHidden.scss
- */
+@import 'mixins/visuallyhidden';
 
 ._block {
   display: block !important;
@@ -17,10 +12,6 @@
 
 ._flex {
   display: flex !important;
-}
-
-._inlineFlex {
-  display: inline-flex !important;
 }
 
 ._hidden {
@@ -55,3 +46,10 @@
   display: table-row !important;
 }
 
+/**
+ * Hide text visually but leave available for screenreaders: h5bp.com/v.
+ */
+
+._visuallyHidden {
+  @include _visuallyHidden;
+}

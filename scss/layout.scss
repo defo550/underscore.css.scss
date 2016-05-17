@@ -27,8 +27,6 @@
 
 @import 'mixins/center-box';
 @import 'mixins/clearfix';
-@import 'mixins/visuallyhidden';
-
 @import 'settings';
 
 /**
@@ -70,12 +68,4 @@
 
 ._clipContent {
   overflow: hidden !important;
-}
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- */
-
-._visuallyHidden {
-  @include _visuallyHidden;
 }
