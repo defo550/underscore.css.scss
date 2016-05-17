@@ -18,7 +18,7 @@
 
     @if $anchor {
       a.#{$selector}:hover {
-        #{unquote($prop)}: darken($value, 10%) !important;
+        #{unquote($prop)}: mix(#000, $value, 10%) !important;
       }
     }
 
