@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-   Text helpers (compiled from scss/text.scss)
+   Text helpers
    ------------------------------------------------------------------------- */
 
 /**
@@ -31,12 +31,9 @@
  */
 
 // Dependencies
-
 @import 'functions/functions';
-
 @import 'mixins/_color-variant';
 @import 'mixins/_text-ellipsis';
-
 @import 'settings';
 
 /**
@@ -67,16 +64,6 @@
 ._txtEllipsis {
   @include _text-ellipsis;
 }
-
-/**
- * Text importance.
- * <selector>: <color>
- *
- * Append key/value pair to $txt-colors to have _color-variant mixin produce
- * the declaration blocks.
- */
-
-@include _color-variant( $txt-colors, color );
 
 /**
  * Word breaking
