@@ -47,8 +47,8 @@
   display: inline-block !important; /* 3 */
 
   max-width: 100%; /* 4 */
-  padding-left: _em( $base-spacing-medium );
-  padding-right: _em( $base-spacing-medium );
+  padding-left: _em( $spacing-medium );
+  padding-right: _em( $spacing-medium );
 
   font-size: 16px !important; /* 5 */
   font-size: 1rem !important; /* 6 */
