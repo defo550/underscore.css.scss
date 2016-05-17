@@ -46,7 +46,6 @@ module.exports = function( grunt ) {
           '<%= config.cssDir %>/lists.css': '<%= config.scssDir %>/lists.scss',
           '<%= config.cssDir %>/offsets.css': '<%= config.scssDir %>/offsets.scss',
           '<%= config.cssDir %>/sizing.css': '<%= config.scssDir %>/sizing.scss',
-          '<%= config.cssDir %>/skins.css': '<%= config.scssDir %>/skins.scss',
           '<%= config.cssDir %>/spacing.css': '<%= config.scssDir %>/spacing.scss',
           '<%= config.cssDir %>/text.css': '<%= config.scssDir %>/text.scss'
         }
