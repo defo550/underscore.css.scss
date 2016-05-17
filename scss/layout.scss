@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------
-   Layout helpers (compiled from /scss/layout.scss)
+   Layout helpers
    ------------------------------------------------------------------------- */
 
 /**
@@ -70,4 +70,12 @@
 
 ._clipContent {
   overflow: hidden !important;
+}
+
+/**
+ * Hide text visually but leave available for screenreaders: h5bp.com/v.
+ */
+
+._visuallyHidden {
+  @include _visuallyHidden;
 }

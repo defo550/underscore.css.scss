@@ -1,10 +1,8 @@
 /* ----------------------------------------------------------------------------
-   Display helpers (compiled from /scss/display.scss)
+   Display helpers
    ------------------------------------------------------------------------- */
 
 // Dependencies
-
-@import 'mixins/visuallyhidden';
 @import 'settings';
 
 /**
@@ -57,10 +55,3 @@
   display: table-row !important;
 }
 
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- */
-
-._visuallyHidden {
-  @include _visuallyHidden;
-}

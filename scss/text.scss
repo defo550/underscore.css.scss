@@ -32,7 +32,6 @@
 
 // Dependencies
 @import 'functions/functions';
-@import 'mixins/_color-variant';
 @import 'mixins/_text-ellipsis';
 @import 'settings';
 
@@ -117,22 +116,6 @@
 ._txtUpcase     { text-transform: uppercase !important; }
 ._txtLowcase    { text-transform: lowercase !important; }
 ._txtCapitalize { text-transform: capitalize !important; }
-
-/**
- * Hide text visually but leave available for screenreaders: h5bp.com/v.
- * @deprecated Has been moved to `./_layout.scss`.
- */
-
-._txtVisuallyHidden {
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  overflow: hidden !important;
-  position: absolute !important;
-
-  border: 0 !important;
-  height: 1px !important;
-  padding: 0 !important;
-  width: 1px !important;
-}
 
 /**
  * Collapse whitespace and suppress line breaks.
