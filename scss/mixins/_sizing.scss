@@ -17,6 +17,7 @@
 // @param {string} $property [width] - Property to add dimensions to.
 // @param {string} $suffix [''] - Add a modifier, etc.
 // @param {boolean} $important - Add '!important' to your sizing declarations.
+// @content Add any additional declarations to sizing declaration block.
 
 @mixin _size($prefix, $size-units, $property: width, $suffix: '', $important: true) {
 
@@ -35,6 +36,7 @@
         }
         @else {
          #{$property}: percentage( $i / $var ) if($important, !important, null);
+         @content;
         }
       }
     }
