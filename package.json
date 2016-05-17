@@ -20,8 +20,6 @@
     "url": "https://github.com/defo550/underscore.css.scss/blob/master/LICENSE.md"
   },
   "scripts": {
-    "build-css": "grunt build-css",
-    "listen-scss": "grunt listen-scss",
     "watch": "grunt listen-scss",
     "build": "grunt build-css"
   },
