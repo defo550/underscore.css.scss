@@ -68,7 +68,7 @@ module.exports = function( grunt ) {
       add_banner: {
         options: {
           banner: '<%= banner %>',
-          report: 'gzip'
+          report: 'min'
         },
         files: {
           '<%= config.name %>.min.css': ['<%= config.cssDir %>/*.css']
