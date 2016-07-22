@@ -124,3 +124,11 @@
 ._textNoWrap {
   white-space: nowrap !important;
 }
+
+/**
+ * Reset whitespace.
+ */
+
+._textWrap {
+  white-space: normal !important;
+}
